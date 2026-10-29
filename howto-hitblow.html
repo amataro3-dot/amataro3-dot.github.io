@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<title>Hit &amp; Blow 遊び方｜Muddy's Games</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- アプリ風(PWA): ホーム画面に追加できるようにする。アイコンとmanifestはサイトのトップ(amataro3-dot.github.io)にある -->
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#4E6A88">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Muddy's Games">
+<meta name="description" content="Hit &amp; Blowの遊び方。相手のひみつの数字をヒントをたよりに当てる、2人用のオンライン数字当て対戦ゲームのルールを説明します。">
+<style>
+body{margin:0 auto;max-width:560px;padding:16px;font:16px/1.8 sans-serif;background:#f7f7f2;color:#222}
+h1{font-size:24px;margin:12px 0 4px}
+.lead{color:#555;margin:0 0 16px}
+h2{font-size:18px;margin:28px 0 8px;border-left:5px solid #2874a6;padding-left:8px}
+h3{font-size:16px;margin:16px 0 4px}
+.box{background:#fff;border-radius:12px;padding:4px 16px 16px;box-shadow:0 1px 4px #0002}
+a{color:#2874a6}
+ol,ul{padding-left:1.3em;margin:6px 0}li{margin:3px 0}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+td,th{border-bottom:1px solid #ddd;padding:5px 4px;text-align:left;vertical-align:top}th{background:#f0f4f8}
+.play{display:block;text-align:center;background:#2874a6;color:#fff;text-decoration:none;padding:12px;border-radius:8px;font-weight:700;margin:20px 0}
+.tip{background:#fff8e1;border-radius:8px;padding:8px 12px;margin:10px 0;font-size:15px}
+footer{margin-top:28px;text-align:center;font-size:14px;color:#666}
+footer a{margin:0 6px;white-space:nowrap}
+</style></head><body>
+<p><a href="/">← Muddy's Games トップ</a></p>
+<h1>Hit &amp; Blow の遊び方</h1>
+<p class="lead">相手が決めたひみつの数字を、ヒントをたよりに当てる数字当てゲームです。先に当てたほうが勝ち。推理と、ちょっとの運で勝負します。</p>
+<a class="play" href="/hitblow/">Hit &amp; Blow で遊ぶ</a>
+<div class="box">
+
+<h2>遊べる人数</h2>
+<p>オンラインは1つの部屋に8人まで。A〜Dの4つのフロアで、2人ずつ同時に対戦できます。席に座らなかった人は、好きなフロアを観戦できます。ひとりでコンピューターの数字を当てる「ひとりで練習」もあります。</p>
+
+<h2>はじめかた</h2>
+<ol>
+<li>名前を入れて「部屋を作る」を押します。</li>
+<li>画面に出た4けたの部屋コードを、みんなに伝えます。</li>
+<li>みんなはコードを入れて「入室する」を押します。</li>
+<li>A〜Dのフロアの席を押して座ります(1フロア2人)。</li>
+<li>部屋を作った人(ホスト)が、3けたか4けたかを選んで「はじめる」を押すと、2人そろったフロアが同時に始まります。</li>
+</ol>
+
+<h2>ひみつの数字を決める</h2>
+<ul>
+<li>0〜9の数字で、3けた(または4けた)の数字を決めます。</li>
+<li>同じ数字は2回使えません。「112」のような数字はだめです。</li>
+<li>「0」から始まる数字(例:「012」)も使えます。</li>
+<li>迷ったら「おまかせ」を押すと、ランダムに決まります。</li>
+<li>上のマスをタップすると、そのマスに数字を入れられます。真ん中だけ先に決める、といった入れ方もできます。</li>
+</ul>
+
+<h2>ヒットとブロー</h2>
+<p>自分の番に、相手の数字だと思う数字を「コール」します。すると、ヒントが返ってきます。</p>
+<ul>
+<li><b>ヒット(H)</b>:数字も場所も合っている数</li>
+<li><b>ブロー(B)</b>:数字は合っているけど、場所がちがう数</li>
+</ul>
+<h3>例:相手の数字が「472」のとき</h3>
+<table>
+<tr><th>コール</th><th>ヒント</th><th>理由</th></tr>
+<tr><td>173</td><td>1H 0B</td><td>7が同じ場所</td></tr>
+<tr><td>247</td><td>0H 3B</td><td>3つとも入っているが、場所がぜんぶちがう</td></tr>
+<tr><td>478</td><td>2H 0B</td><td>4と7が同じ場所</td></tr>
+<tr><td>472</td><td>3H 0B</td><td>正解!</td></tr>
+</table>
+
+<h2>勝ち負け</h2>
+<ul>
+<li>先攻・後攻はランダムで決まり、始まるときに発表されます。交代でコールします。</li>
+<li>相手の数字をぴったり当てた(全部ヒット)ほうの勝ちです。</li>
+<li>先攻が当てたときは「サドンデス」。後攻にもう1回だけチャンスがあります。後攻も当てたら引き分けです。</li>
+<li>試合のあとは、おたがいのひみつの数字が見られます。</li>
+<li>相手が途中で抜けて10秒もどらないときは、不戦勝になります。</li>
+<li>全部のフロアが終わったら、ホストが「もう一回」を押してロビーにもどります。</li>
+</ul>
+
+<h2>メモ機能</h2>
+<p>メモは自分だけに見えます。相手には見えません。</p>
+<ul>
+<li><b>数字のメモ</b>:0〜9のボタンをタップするたびに「✕(使われていない)」→「○(使われているかも)」→「なし」と変わります。</li>
+<li>✕にした数字は、上の数字ボタンと自分のコールの記録で薄くなります(ボタンは押せます)。○にした数字は、記録の中で丸で囲まれます。</li>
+<li><b>場所のメモ</b>:メモの上の□をタップしてから数字を押すと、「この場所はこの数字かも」をメモできます。数字が入った□をもう一度タップすると消えます。</li>
+</ul>
+
+<h2>観戦</h2>
+<p>席に座らなかった人や、先に試合が終わった人は、画面の下のA〜Dのボタンでフロアを切りかえて観戦できます。両方のコールとヒント、相手が入力中の数字が見えます。ひみつの数字は、試合が終わるまで見えません。</p>
+
+<h2>勝つためのコツ</h2>
+<div class="tip">💡 最初は「012」「345」のように、まだ使っていない数字でコールすると、どの数字が入っているかを早くしぼれます。</div>
+<div class="tip">💡 「0H 0B」は大チャンス。その数字はぜんぶ使われていないので、メモで✕を付けておきましょう。</div>
+<div class="tip">💡 相手の番のあいだに、次のコールを打っておけます。「コール」は自分の番になったら押せます。</div>
+<div class="tip">💡 ひとりで練習では、何回で当てられたかのベスト記録が残ります。</div>
+</div>
+<a class="play" href="/hitblow/">Hit &amp; Blow で遊ぶ</a>
+<footer>
+<a href="/about.html">運営者情報</a><a href="/contact.html">お問い合わせ</a><a href="/privacy.html">プライバシーポリシー</a>
+<p>© 2026 muddys-games運営</p>
+</footer>
+</body></html>
