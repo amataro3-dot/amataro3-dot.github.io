@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muddys-games.com/sitemap.xml
