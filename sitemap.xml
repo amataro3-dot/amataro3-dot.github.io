@@ -18,7 +18,12 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/howto-party-arcade.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/howto-party-arcade.html"/>
   </url>
-  <url><loc>https://muddys-games.com/howto-oekaki.html</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://muddys-games.com/howto-oekaki.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/howto-oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/howto-oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/howto-oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/howto-oekaki.html"/>
+  </url>
   <url><loc>https://muddys-games.com/howto-hitblow.html</loc><lastmod>2026-10-30</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/howto-hitblow.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/howto-hitblow.html"/>
@@ -179,6 +184,12 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/howto-party-arcade.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/howto-party-arcade.html"/>
   </url>
+  <url><loc>https://muddys-games.com/en/howto-oekaki.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/howto-oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/howto-oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/howto-oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/howto-oekaki.html"/>
+  </url>
   <url><loc>https://muddys-games.com/en/howto-hitblow.html</loc><lastmod>2026-10-30</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/howto-hitblow.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/howto-hitblow.html"/>
@@ -334,6 +345,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/howto-party-arcade.html"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/howto-party-arcade.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/howto-party-arcade.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/howto-oekaki.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/howto-oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/howto-oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/howto-oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/howto-oekaki.html"/>
   </url>
   <url><loc>https://muddys-games.com/ko/howto-hitblow.html</loc><lastmod>2026-10-30</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/howto-hitblow.html"/>
