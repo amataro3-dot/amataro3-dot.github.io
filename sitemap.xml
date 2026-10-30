@@ -1,34 +1,442 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://muddys-games.com/</loc><lastmod>2026-10-30</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://muddys-games.com/</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/"/>
+  </url>
   <url><loc>https://muddys-games.com/howto-labyrinth.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/howto-party-arcade.html</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://muddys-games.com/howto-party-arcade.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/howto-party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/howto-party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/howto-party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/howto-party-arcade.html"/>
+  </url>
   <url><loc>https://muddys-games.com/howto-oekaki.html</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://muddys-games.com/howto-hitblow.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/just5.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/ruler.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/drawcm.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/cut.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/angle.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/hata.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/oddcolor.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/numtouch.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/dodge.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/burger.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/jack.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/hamburg.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/daruma.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/curry.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/minigames/kana.html</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://muddys-games.com/minigames/just5.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/just5.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/just5.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/just5.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/just5.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/ruler.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/ruler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/ruler.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/ruler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/ruler.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/drawcm.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/drawcm.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/drawcm.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/drawcm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/drawcm.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/cut.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/cut.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/cut.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/cut.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/cut.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/angle.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/angle.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/angle.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/angle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/angle.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/hata.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/hata.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/hata.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/hata.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/hata.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/oddcolor.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/oddcolor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/oddcolor.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/oddcolor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/oddcolor.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/numtouch.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/numtouch.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/numtouch.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/numtouch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/numtouch.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/dodge.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/dodge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/dodge.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/dodge.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/dodge.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/burger.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/burger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/burger.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/burger.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/burger.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/jack.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/jack.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/jack.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/jack.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/jack.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/hamburg.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/hamburg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/hamburg.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/hamburg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/hamburg.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/daruma.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/daruma.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/daruma.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/daruma.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/daruma.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/curry.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/curry.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/curry.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/curry.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/curry.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/minigames/kana.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/kana.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/kana.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/kana.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/kana.html"/>
+  </url>
   <url><loc>https://muddys-games.com/labyrinth/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://muddys-games.com/party-arcade/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://muddys-games.com/oekaki/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://muddys-games.com/hitblow/</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/blog/</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/blog/oekaki.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/blog/party-arcade.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/blog/start.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/about.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/contact.html</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://muddys-games.com/privacy.html</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://muddys-games.com/blog/</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/blog/"/>
+  </url>
+  <url><loc>https://muddys-games.com/blog/oekaki.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/blog/oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/blog/oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/blog/oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/blog/oekaki.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/blog/party-arcade.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/blog/party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/blog/party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/blog/party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/blog/party-arcade.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/blog/start.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/blog/start.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/blog/start.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/blog/start.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/blog/start.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/about.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/about.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/contact.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/contact.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/privacy.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/privacy.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/howto-party-arcade.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/howto-party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/howto-party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/howto-party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/howto-party-arcade.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/just5.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/just5.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/just5.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/just5.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/just5.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/ruler.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/ruler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/ruler.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/ruler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/ruler.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/drawcm.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/drawcm.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/drawcm.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/drawcm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/drawcm.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/cut.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/cut.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/cut.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/cut.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/cut.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/angle.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/angle.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/angle.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/angle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/angle.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/hata.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/hata.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/hata.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/hata.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/hata.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/oddcolor.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/oddcolor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/oddcolor.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/oddcolor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/oddcolor.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/numtouch.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/numtouch.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/numtouch.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/numtouch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/numtouch.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/dodge.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/dodge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/dodge.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/dodge.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/dodge.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/burger.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/burger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/burger.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/burger.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/burger.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/jack.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/jack.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/jack.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/jack.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/jack.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/hamburg.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/hamburg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/hamburg.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/hamburg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/hamburg.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/daruma.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/daruma.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/daruma.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/daruma.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/daruma.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/curry.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/curry.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/curry.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/curry.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/curry.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/minigames/kana.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/kana.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/kana.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/kana.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/kana.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/blog/</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/blog/"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/blog/oekaki.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/blog/oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/blog/oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/blog/oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/blog/oekaki.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/blog/party-arcade.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/blog/party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/blog/party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/blog/party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/blog/party-arcade.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/blog/start.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/blog/start.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/blog/start.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/blog/start.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/blog/start.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/about.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/about.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/contact.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/contact.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/en/privacy.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/privacy.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/howto-party-arcade.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/howto-party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/howto-party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/howto-party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/howto-party-arcade.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/just5.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/just5.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/just5.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/just5.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/just5.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/ruler.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/ruler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/ruler.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/ruler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/ruler.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/drawcm.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/drawcm.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/drawcm.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/drawcm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/drawcm.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/cut.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/cut.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/cut.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/cut.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/cut.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/angle.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/angle.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/angle.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/angle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/angle.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/hata.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/hata.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/hata.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/hata.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/hata.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/oddcolor.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/oddcolor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/oddcolor.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/oddcolor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/oddcolor.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/numtouch.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/numtouch.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/numtouch.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/numtouch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/numtouch.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/dodge.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/dodge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/dodge.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/dodge.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/dodge.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/burger.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/burger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/burger.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/burger.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/burger.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/jack.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/jack.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/jack.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/jack.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/jack.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/hamburg.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/hamburg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/hamburg.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/hamburg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/hamburg.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/daruma.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/daruma.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/daruma.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/daruma.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/daruma.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/curry.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/curry.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/curry.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/curry.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/curry.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/minigames/kana.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/minigames/kana.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/minigames/kana.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/minigames/kana.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/minigames/kana.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/blog/</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/blog/"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/blog/oekaki.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/blog/oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/blog/oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/blog/oekaki.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/blog/oekaki.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/blog/party-arcade.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/blog/party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/blog/party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/blog/party-arcade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/blog/party-arcade.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/blog/start.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/blog/start.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/blog/start.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/blog/start.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/blog/start.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/about.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/about.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/contact.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/contact.html"/>
+  </url>
+  <url><loc>https://muddys-games.com/ko/privacy.html</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://muddys-games.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://muddys-games.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/privacy.html"/>
+  </url>
 </urlset>
