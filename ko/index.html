@@ -21,7 +21,7 @@
 <style>
 :root{--bg:#2b1a10;--card:#fffaf2;--neon:#ff4fa3;--neon2:#4ff0ff;--amber:#ffb84d;--light:#f6e7d3;--ink:#1f2633;--sub:#5d6675;--blue:#b8432a;--blue2:#4E6A88;--accent:#f0a020;--line:#e6e2d8}
 *{box-sizing:border-box}
-body{margin:0;color:var(--ink);font:16px/1.75 sans-serif;background-color:var(--bg);background-image:radial-gradient(ellipse at 50% 0,rgba(255,120,60,.18),transparent 60%),radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55)),repeating-linear-gradient(90deg,transparent 0 118px,rgba(0,0,0,.45) 118px 120px,rgba(255,220,180,.06) 120px 121px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.32' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.25  0 0 0 0 0.14  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23w)'/%3E%3C/svg%3E");background-size:auto,auto,auto,400px 400px;background-attachment:fixed,fixed,scroll,scroll}
+body{margin:0;color:var(--ink);font:16px/1.75 sans-serif;background-color:var(--bg);background-image:radial-gradient(ellipse 140% 700px at 50% 0,rgba(255,120,60,.2),transparent 70%),linear-gradient(90deg,rgba(0,0,0,.5),transparent 22%,transparent 78%,rgba(0,0,0,.5)),repeating-linear-gradient(90deg,transparent 0 118px,rgba(0,0,0,.45) 118px 120px,rgba(255,220,180,.06) 120px 121px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.32' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.25  0 0 0 0 0.14  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23w)'/%3E%3C/svg%3E");background-size:auto,auto,auto,400px 400px;background-repeat:no-repeat,repeat,repeat,repeat}
 .wrap{max-width:600px;margin:0 auto;padding:12px 16px 24px}
 a{color:var(--blue)}
 .langs{text-align:right;font-size:13px;margin:0;color:var(--light)}
@@ -72,6 +72,13 @@ a{color:var(--blue)}
 .blog small{display:block;color:var(--sub);font-weight:400;font-size:12px}
 .blog .all{background:transparent;box-shadow:none;text-align:center;color:var(--amber);padding:4px}
 @media(min-width:880px){.wrap{max-width:940px}.games{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(4,1fr)}.about,.blog,.tip{max-width:640px;margin-left:auto;margin-right:auto}}
+.more-txt{margin:-4px 0 12px;font-size:15px}
+.more-txt summary{cursor:pointer;color:var(--blue);font-weight:700;font-size:14px;list-style:none}
+.more-txt summary::-webkit-details-marker{display:none}
+.more-txt summary::before{content:"▶ ";font-size:11px}
+.more-txt[open] summary::before{content:"▼ "}
+.more-txt p{color:var(--ink);margin:8px 0 0}
+.more-txt .rec{color:var(--sub);font-size:14px}
 footer{margin-top:32px;text-align:center;font-size:14px;color:var(--light)}
 footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 </style></head><body><div class="wrap">
@@ -90,6 +97,7 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 <div class="txt"><h2 class="round">Labyrinth .VS</h2>
 <div class="tags"><span>1~8명</span><span>두뇌 싸움</span><span>컴퓨터 대전</span></div>
 <p>보이지 않는 벽을 숨긴 미로에서 대결. 부딪힌 벽을 기억해서 먼저 골인하세요.</p>
+<details class="more-txt"><summary>자세히 보기</summary><p>상대가 보이지 않는 벽을 숨겨 둔 6×6 미로에서 대결합니다. 부딪힌 벽을 기억하고 상대의 미로 만드는 방식을 읽어 내는 두뇌 싸움이에요. 1대1부터 4명 복식, 최대 8명까지. 컴퓨터 대전도 있어서 혼자서 규칙을 익힐 수 있어요.</p><p class="rec"><b>이럴 때 추천:</b> 둘이서 차분하게 머리를 써서 승부하고 싶을 때. 관전하는 사람이 코인을 걸고 승패를 예상할 수도 있어서, 여럿이 모인 자리에서도 신나요.</p></details>
 
 <div class="btns"><a class="play" href="/labyrinth/?lang=ko">▶ 플레이</a><a class="how" href="/ko/howto-labyrinth.html">게임 방법</a></div></div>
 </section>
@@ -99,6 +107,7 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 <div class="txt"><h2 class="round">Party-Arcade</h2>
 <div class="tags"><span>최대 8명</span><span>미니게임 15종</span><span>👑 타이틀 홀더</span></div>
 <p>원을 똑같이 자르고, 버거를 쌓고, 카레를 만들고…. 매번 다른 미니게임으로 포인트를 겨뤄요.</p>
+<details class="more-txt"><summary>자세히 보기</summary><p>「자를 잡아라!」「깃발 올려 내려!」「무궁화 꽃이 피었습니다!」 등 15가지 미니게임으로 포인트를 겨루는 파티 게임입니다. 반사신경, 감각, 기억력 등 게임마다 잘하는 사람이 달라서, 마지막까지 누가 이길지 몰라요.</p><p class="rec"><b>이럴 때 추천:</b> 모인 인원이 많을 때. 미니게임 하나가 짧아서 짬짬이 즐길 수 있어요. 게임별 최고 기록을 내면 「타이틀 홀더」로 이름이 남아요.</p></details>
 <a class="more" href="/ko/howto-party-arcade.html#list">미니게임 15종 보기 →</a>
 <div class="btns"><a class="play" href="/party-arcade/?lang=ko">▶ 플레이</a><a class="how" href="/ko/howto-party-arcade.html">게임 방법</a></div></div>
 </section>
@@ -108,6 +117,7 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 <div class="txt"><h2 class="round">그림 전달 게임</h2>
 <div class="tags"><span>2~8명</span><span>그림 그리기</span></div>
 <p>제시어를 그림만으로 릴레이. 고양이가 어느새 돼지로…? 마지막에 다 같이 정답 확인.</p>
+<details class="more-txt"><summary>자세히 보기</summary><p>제시어를 그림만으로 다음 사람에게 전달하는 게임입니다. 앞사람의 그림은 10초밖에 볼 수 없어서, 제시어가 조금씩 바뀌어 가요. 마지막에 모두의 그림을 재생해서 어디서 바뀌었는지 보는 순간이 가장 신나요.</p><p class="rec"><b>이럴 때 추천:</b> 그림 실력과 상관없이 다 같이 웃고 싶을 때. 제시어는 장르에서 고를 수 있어요. 그림이 서툴수록 마지막 정답 확인이 신나요.</p></details>
 
 <div class="btns"><a class="play" href="/oekaki/?lang=ko">▶ 플레이</a><a class="how" href="/ko/howto-oekaki.html">게임 방법</a></div></div>
 </section>
@@ -117,6 +127,7 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 <div class="txt"><h2 class="round">Hit &amp; Blow</h2>
 <div class="tags"><span>1~8명</span><span>추리</span><span>혼자 연습</span></div>
 <p>상대의 비밀 숫자를 「히트」와 「블로」 힌트로 맞히는 숫자 맞히기 대결.</p>
+<details class="more-txt"><summary>자세히 보기</summary><p>상대가 정한 비밀 숫자를 「히트」와 「블로」 힌트로 맞히는 숫자 맞히기 대전입니다. 한 방에 8명까지 들어가서, 4개의 플로어에서 2명씩 동시에 대결할 수 있어요. 다른 플로어 관전이나 혼자 연습도 할 수 있어요.</p><p class="rec"><b>이럴 때 추천:</b> 둘이서 조용히 두뇌 싸움을 하고 싶을 때나 혼자 연습하고 싶을 때. 숫자는 3자리와 4자리 중에서 고를 수 있어요.</p></details>
 
 <div class="btns"><a class="play" href="/hitblow/?lang=ko">▶ 플레이</a><a class="how" href="/ko/howto-hitblow.html">게임 방법</a></div></div>
 </section>
@@ -131,7 +142,10 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 
 <h2 class="sec round">Muddy's Games 소개</h2>
 <div class="about">
-<p>친구들과 모였을 때 「다 같이 할 수 있는 게임이 있으면 좋겠다」는 생각으로 만들기 시작한 수제 게임 사이트입니다. 모든 게임은 스마트폰 브라우저로 열기만 하면 돼요. 앱 설치도 회원가입도 필요 없어요.</p><p>가장 중요하게 생각하는 것은 여럿이서 왁자지껄 즐길 수 있는 것. 같은 자리에 있는 친구도, 멀리 있는 친구도 4자리 번호 하나로 같은 게임에 들어올 수 있어요. 게임은 앞으로도 조금씩 늘려 갈 거예요.</p>
+<p>Muddy's Games는 친구들과 모였을 때 「다 같이 할 수 있는 게임이 있으면 좋겠다」는 생각으로 만들기 시작한 수제 게임 사이트입니다.</p>
+<p>여기 있는 게임은 모두 스마트폰 브라우저로 열기만 하면 할 수 있어요. 앱 설치도 회원가입도 필요 없어요. 방을 만들고 4자리 번호를 알려 주면, 같은 자리에 있는 친구도 멀리 있는 친구도 바로 같은 게임에 참가할 수 있어요.</p>
+<p>가장 중요하게 생각하는 것은 여럿이서 왁자지껄 즐길 수 있는 것. Party-Arcade는 최대 8명이 동시에 할 수 있고, 매번 다른 미니게임으로 순위가 뒤바뀌어요. 그림 전달 게임은 인원이 많을수록 그림이 점점 바뀌어서, 마지막에 다 같이 크게 웃을 수 있어요.</p>
+<p>게임은 앞으로도 조금씩 늘려 갈 거예요.</p>
 </div>
 
 <h2 class="sec round">개발 일기</h2>

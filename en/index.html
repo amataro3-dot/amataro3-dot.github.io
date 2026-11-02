@@ -21,7 +21,7 @@
 <style>
 :root{--bg:#2b1a10;--card:#fffaf2;--neon:#ff4fa3;--neon2:#4ff0ff;--amber:#ffb84d;--light:#f6e7d3;--ink:#1f2633;--sub:#5d6675;--blue:#b8432a;--blue2:#4E6A88;--accent:#f0a020;--line:#e6e2d8}
 *{box-sizing:border-box}
-body{margin:0;color:var(--ink);font:16px/1.75 sans-serif;background-color:var(--bg);background-image:radial-gradient(ellipse at 50% 0,rgba(255,120,60,.18),transparent 60%),radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55)),repeating-linear-gradient(90deg,transparent 0 118px,rgba(0,0,0,.45) 118px 120px,rgba(255,220,180,.06) 120px 121px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.32' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.25  0 0 0 0 0.14  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23w)'/%3E%3C/svg%3E");background-size:auto,auto,auto,400px 400px;background-attachment:fixed,fixed,scroll,scroll}
+body{margin:0;color:var(--ink);font:16px/1.75 sans-serif;background-color:var(--bg);background-image:radial-gradient(ellipse 140% 700px at 50% 0,rgba(255,120,60,.2),transparent 70%),linear-gradient(90deg,rgba(0,0,0,.5),transparent 22%,transparent 78%,rgba(0,0,0,.5)),repeating-linear-gradient(90deg,transparent 0 118px,rgba(0,0,0,.45) 118px 120px,rgba(255,220,180,.06) 120px 121px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.32' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.25  0 0 0 0 0.14  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23w)'/%3E%3C/svg%3E");background-size:auto,auto,auto,400px 400px;background-repeat:no-repeat,repeat,repeat,repeat}
 .wrap{max-width:600px;margin:0 auto;padding:12px 16px 24px}
 a{color:var(--blue)}
 .langs{text-align:right;font-size:13px;margin:0;color:var(--light)}
@@ -72,6 +72,13 @@ a{color:var(--blue)}
 .blog small{display:block;color:var(--sub);font-weight:400;font-size:12px}
 .blog .all{background:transparent;box-shadow:none;text-align:center;color:var(--amber);padding:4px}
 @media(min-width:880px){.wrap{max-width:940px}.games{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(4,1fr)}.about,.blog,.tip{max-width:640px;margin-left:auto;margin-right:auto}}
+.more-txt{margin:-4px 0 12px;font-size:15px}
+.more-txt summary{cursor:pointer;color:var(--blue);font-weight:700;font-size:14px;list-style:none}
+.more-txt summary::-webkit-details-marker{display:none}
+.more-txt summary::before{content:"▶ ";font-size:11px}
+.more-txt[open] summary::before{content:"▼ "}
+.more-txt p{color:var(--ink);margin:8px 0 0}
+.more-txt .rec{color:var(--sub);font-size:14px}
 footer{margin-top:32px;text-align:center;font-size:14px;color:var(--light)}
 footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 </style></head><body><div class="wrap">
@@ -90,6 +97,7 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 <div class="txt"><h2 class="round">Labyrinth .VS</h2>
 <div class="tags"><span>1–8 players</span><span>Brain battle</span><span>vs. computer</span></div>
 <p>A maze battle with hidden invisible walls. Remember the walls you bump into and reach the goal first.</p>
+<details class="more-txt"><summary>Read more</summary><p>A battle on a 6×6 maze where your opponent has hidden invisible walls. Remember the walls you bump into and read how your opponent builds a maze. Play 1-on-1, 4-player doubles, or up to 8 players. There is also a computer opponent, so you can learn the rules on your own.</p><p class="rec"><b>Great for:</b> A focused brain battle between two players. Spectators can bet coins on who will win, so it’s fun for a big group too.</p></details>
 
 <div class="btns"><a class="play" href="/labyrinth/?lang=en">▶ Play</a><a class="how" href="/en/howto-labyrinth.html">How to play</a></div></div>
 </section>
@@ -99,6 +107,7 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 <div class="txt"><h2 class="round">Party-Arcade</h2>
 <div class="tags"><span>Up to 8 players</span><span>15 mini-games</span><span>👑 Title holders</span></div>
 <p>Cut it evenly, stack a burger, cook a curry… Compete for points in a different mini-game every round.</p>
+<details class="more-txt"><summary>Read more</summary><p>A party game where you compete for points across 15 mini-games, like “Catch the Ruler!”, “Flag Up, Flag Down!” and “Red Light, Green Light!”. Some games test reflexes, some your sense of time or length, some your memory, so everyone has a different strong point and you never know who will win until the very end.</p><p class="rec"><b>Great for:</b> Big groups. Each mini-game is short, so you can play in spare moments. Set the best record in a game and your name stays as the “Title holder”.</p></details>
 <a class="more" href="/en/howto-party-arcade.html#list">See all 15 mini-games →</a>
 <div class="btns"><a class="play" href="/party-arcade/?lang=en">▶ Play</a><a class="how" href="/en/howto-party-arcade.html">How to play</a></div></div>
 </section>
@@ -108,6 +117,7 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 <div class="txt"><h2 class="round">Drawing Telephone</h2>
 <div class="tags"><span>2–8 players</span><span>Drawing</span></div>
 <p>Pass a word along using only drawings. Somehow the cat turns into a pig…? Check the answer together at the end.</p>
+<details class="more-txt"><summary>Read more</summary><p>Pass a secret word along to the next player using only drawings. You can only see the previous drawing for 10 seconds, so the word slowly changes. The best part is the end, when everyone’s drawings are replayed and you find out where it all went wrong.</p><p class="rec"><b>Great for:</b> Laughing together, no matter how well you draw. Choose the words from different categories. The worse the drawings, the funnier the answer check at the end.</p></details>
 
 <div class="btns"><a class="play" href="/oekaki/?lang=en">▶ Play</a><a class="how" href="/en/howto-oekaki.html">How to play</a></div></div>
 </section>
@@ -117,6 +127,7 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 <div class="txt"><h2 class="round">Hit &amp; Blow</h2>
 <div class="tags"><span>1–8 players</span><span>Deduction</span><span>Solo practice</span></div>
 <p>Guess your opponent’s secret number using “Hit” and “Blow” hints.</p>
+<details class="more-txt"><summary>Read more</summary><p>Guess your opponent’s secret number using “Hit” and “Blow” hints. Up to 8 people can join one room, and two players at a time can battle on each of the 4 floors. You can also watch other floors or practice alone.</p><p class="rec"><b>Great for:</b> A quiet battle of wits for two, or practicing alone. Choose 3-digit or 4-digit numbers.</p></details>
 
 <div class="btns"><a class="play" href="/hitblow/?lang=en">▶ Play</a><a class="how" href="/en/howto-hitblow.html">How to play</a></div></div>
 </section>
@@ -131,7 +142,10 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 
 <h2 class="sec round">About Muddy's Games</h2>
 <div class="about">
-<p>A handmade game site that started with a simple wish: “I want games we can all play together when friends get together.” Every game runs in your phone’s browser, with no app to install and no account to create.</p><p>What matters most is having fun as a big group. Friends right next to you or far away can join the same game with just a 4-digit number. More games will be added little by little.</p>
+<p>Muddy's Games is a handmade game site that started with a simple wish: “I want games we can all play together when friends get together.”</p>
+<p>Every game here runs in your phone’s browser. There is no app to install and no account to create. Create a room, share the 4-digit number, and friends right next to you or far away can join the same game in seconds.</p>
+<p>What matters most is having fun as a big group. Party-Arcade lets up to 8 people play at once, and the ranking changes with every mini-game. In Drawing Telephone, the more players there are, the more the drawings drift, and everyone ends up laughing together at the end.</p>
+<p>More games will be added little by little.</p>
 </div>
 
 <h2 class="sec round">Dev diary</h2>

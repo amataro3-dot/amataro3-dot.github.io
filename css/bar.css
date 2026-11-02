@@ -1,0 +1,33 @@
+/* Muddy's Games 共通デザイン(アメリカンバー風: 木目の背景とネオン)。トップ以外のページが、各ページの <style> のあとに読み込む。
+   トップ(index.html)は同じ色をページの中に持っている。色を変えるときは両方そろえる。 */
+:root{--bg:#2b1a10;--card:#fffaf2;--ink:#1f2633;--sub:#5d6675;--neon:#ff4fa3;--neon2:#4ff0ff;--amber:#ffb84d;--light:#f6e7d3;--red:#b8432a}
+body{color:var(--light);background-color:var(--bg);
+background-image:radial-gradient(ellipse 140% 700px at 50% 0,rgba(255,120,60,.2),transparent 70%),linear-gradient(90deg,rgba(0,0,0,.5),transparent 22%,transparent 78%,rgba(0,0,0,.5)),repeating-linear-gradient(90deg,transparent 0 118px,rgba(0,0,0,.45) 118px 120px,rgba(255,220,180,.06) 120px 121px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.32' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.25  0 0 0 0 0.14  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23w)'/%3E%3C/svg%3E");
+background-size:auto,auto,auto,400px 400px;background-repeat:no-repeat,repeat,repeat,repeat}
+a{color:var(--amber)}
+.langs{color:var(--light)}
+/* 見出し: ページの題はピンクのネオン、カードの外の見出しは水色のネオン */
+h1{font-family:"M PLUS Rounded 1c","Jua",sans-serif;font-weight:800;color:#fff2f8;text-shadow:0 0 2px #fff,0 0 8px var(--neon),0 0 18px var(--neon)}
+body>h2{color:#eaffff;border-left-color:var(--neon2);text-shadow:0 0 3px #fff,0 0 10px var(--neon2)}
+.crumb,.date,.lead{color:var(--light)}
+.date{opacity:.8}
+.kind{background:rgba(20,10,5,.55);color:var(--light);border:1px solid rgba(255,184,77,.45);font-weight:700}
+/* カード(白い紙の部分)の中は、いままでどおり濃い文字 */
+.box,.post{background:var(--card);color:var(--ink);border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.box a{color:var(--red)}
+.box h2{color:var(--ink);border-left-color:var(--red)}
+th{background:#fbeee0}
+td,th{border-bottom-color:#eadfd2}
+.tip{background:#fff1d6}
+.behind{background:#f3ece2}
+.post b{color:var(--red)}
+.post small{color:var(--sub)}
+/* ボタン */
+.play,.btn{background:linear-gradient(#d24d31,#b03a22);color:#fff;border-radius:12px;box-shadow:0 2px 0 #7a2412}
+.pn a{color:var(--amber)}
+.list{color:var(--light)}
+.list .cur{color:#fff}
+footer{color:var(--light)}
+footer a{color:var(--amber)}
+@media(prefers-reduced-motion:no-preference){.play:active,.btn:active{transform:scale(.98)}}
+.box a.btn,.box a.play{color:#fff;text-decoration:none}

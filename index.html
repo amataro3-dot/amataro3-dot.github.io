@@ -34,7 +34,7 @@
 <style>
 :root{--bg:#2b1a10;--card:#fffaf2;--neon:#ff4fa3;--neon2:#4ff0ff;--amber:#ffb84d;--light:#f6e7d3;--ink:#1f2633;--sub:#5d6675;--blue:#b8432a;--blue2:#4E6A88;--accent:#f0a020;--line:#e6e2d8}
 *{box-sizing:border-box}
-body{margin:0;color:var(--ink);font:16px/1.75 sans-serif;background-color:var(--bg);background-image:radial-gradient(ellipse at 50% 0,rgba(255,120,60,.18),transparent 60%),radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55)),repeating-linear-gradient(90deg,transparent 0 118px,rgba(0,0,0,.45) 118px 120px,rgba(255,220,180,.06) 120px 121px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.32' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.25  0 0 0 0 0.14  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23w)'/%3E%3C/svg%3E");background-size:auto,auto,auto,400px 400px;background-attachment:fixed,fixed,scroll,scroll}
+body{margin:0;color:var(--ink);font:16px/1.75 sans-serif;background-color:var(--bg);background-image:radial-gradient(ellipse 140% 700px at 50% 0,rgba(255,120,60,.2),transparent 70%),linear-gradient(90deg,rgba(0,0,0,.5),transparent 22%,transparent 78%,rgba(0,0,0,.5)),repeating-linear-gradient(90deg,transparent 0 118px,rgba(0,0,0,.45) 118px 120px,rgba(255,220,180,.06) 120px 121px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.32' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.25  0 0 0 0 0.14  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23w)'/%3E%3C/svg%3E");background-size:auto,auto,auto,400px 400px;background-repeat:no-repeat,repeat,repeat,repeat}
 .wrap{max-width:600px;margin:0 auto;padding:12px 16px 24px}
 a{color:var(--blue)}
 .langs{text-align:right;font-size:13px;margin:0;color:var(--light)}
@@ -85,6 +85,13 @@ a{color:var(--blue)}
 .blog small{display:block;color:var(--sub);font-weight:400;font-size:12px}
 .blog .all{background:transparent;box-shadow:none;text-align:center;color:var(--amber);padding:4px}
 @media(min-width:880px){.wrap{max-width:940px}.games{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(4,1fr)}.about,.blog,.tip{max-width:640px;margin-left:auto;margin-right:auto}}
+.more-txt{margin:-4px 0 12px;font-size:15px}
+.more-txt summary{cursor:pointer;color:var(--blue);font-weight:700;font-size:14px;list-style:none}
+.more-txt summary::-webkit-details-marker{display:none}
+.more-txt summary::before{content:"▶ ";font-size:11px}
+.more-txt[open] summary::before{content:"▼ "}
+.more-txt p{color:var(--ink);margin:8px 0 0}
+.more-txt .rec{color:var(--sub);font-size:14px}
 footer{margin-top:32px;text-align:center;font-size:14px;color:var(--light)}
 footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 </style></head><body><div class="wrap">
@@ -103,6 +110,7 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 <div class="txt"><h2 class="round">Labyrinth .VS</h2>
 <div class="tags"><span>1〜8人</span><span>頭脳戦</span><span>コンピューター戦あり</span></div>
 <p>見えない壁をしかけた迷路で対戦。ぶつかった壁を覚えて、先にゴールしよう。</p>
+<details class="more-txt"><summary>くわしく見る</summary><p>相手に見えない壁をしかけた6×6の迷路で対戦します。ぶつかった壁を覚えて、相手の迷路の作り方を読む頭脳戦です。2人の1対1から、4人のダブルス、最大8人のマルチまで。コンピューター戦もあるので、ひとりでルールを覚えられます。</p><p class="rec"><b>こんなときにおすすめ:</b> 2人でじっくり頭を使って勝負したいとき。観戦している人がコインを賭けて勝敗を予想することもできるので、大人数の集まりでも盛り上がります。</p></details>
 <div class="btns"><a class="play" href="/labyrinth/?lang=ja">▶ 遊ぶ</a><a class="how" href="/howto-labyrinth.html">遊び方</a></div></div>
 </section>
 
@@ -111,6 +119,7 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 <div class="txt"><h2 class="round">Party-Arcade</h2>
 <div class="tags"><span>最大8人</span><span>ミニゲーム15種類</span><span>👑 タイトルホルダー</span></div>
 <p>円を同じ大きさに切る、バーガーを積む、カレーを作る…。毎回ちがうミニゲームでポイントを競おう。</p>
+<details class="more-txt"><summary>くわしく見る</summary><p>「定規キャッチ」「旗揚げゲーム」「だるまさんがころんだ」など、15種類のミニゲームでポイントを競うパーティーゲームです。反射神経、感覚、記憶力と、ゲームごとに得意な人がちがうので、最後まで誰が勝つかわかりません。</p><p class="rec"><b>こんなときにおすすめ:</b> 集まった人数が多いとき。1つのミニゲームは短いので、すきま時間にも遊べます。ゲームごとにいちばん良い記録を出すと、「タイトルホルダー」として名前が残ります。</p></details>
 <a class="more" href="/howto-party-arcade.html#list">ミニゲーム15種類を見る →</a>
 <div class="btns"><a class="play" href="/party-arcade/?lang=ja">▶ 遊ぶ</a><a class="how" href="/howto-party-arcade.html">遊び方</a></div></div>
 </section>
@@ -120,6 +129,7 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 <div class="txt"><h2 class="round">お絵描き伝言ゲーム</h2>
 <div class="tags"><span>2〜8人</span><span>お絵描き</span></div>
 <p>お題を絵だけでリレー。ねこが、いつのまにかぶたに…? 最後にみんなで答え合わせ。</p>
+<details class="more-txt"><summary>くわしく見る</summary><p>お題を絵だけで次の人へリレーするゲームです。前の人の絵は10秒しか見られないので、だんだんお題が変わっていきます。最後に全員の絵を再生して、どこで変わったかを見るのがいちばん盛り上がるところです。</p><p class="rec"><b>こんなときにおすすめ:</b> 絵の上手・下手に関係なく、みんなで笑いたいとき。お題はジャンルから選べます。下手な絵ほど、最後の答え合わせが盛り上がります。</p></details>
 <div class="btns"><a class="play" href="/oekaki/?lang=ja">▶ 遊ぶ</a><a class="how" href="/howto-oekaki.html">遊び方</a></div></div>
 </section>
 
@@ -128,6 +138,7 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 <div class="txt"><h2 class="round">Hit &amp; Blow</h2>
 <div class="tags"><span>1〜8人</span><span>推理</span><span>ひとり練習あり</span></div>
 <p>相手のひみつの数字を、ヒットとブローのヒントで当てる数字当てバトル。</p>
+<details class="more-txt"><summary>くわしく見る</summary><p>相手が決めたひみつの数字を、「ヒット」と「ブロー」のヒントをたよりに当てる数字当て対戦です。1つの部屋に8人まで入れて、4つのフロアで2人ずつ同時に対戦できます。ほかのフロアの観戦や、ひとりでの練習もできます。</p><p class="rec"><b>こんなときにおすすめ:</b> 2人で静かに頭脳戦をしたいときや、ひとりで練習したいとき。数字は3けたと4けたから選べます。</p></details>
 <div class="btns"><a class="play" href="/hitblow/?lang=ja">▶ 遊ぶ</a><a class="how" href="/howto-hitblow.html">遊び方</a></div></div>
 </section>
 
@@ -144,8 +155,10 @@ footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 
 <h2 class="sec round">Muddy's Gamesについて</h2>
 <div class="about">
-<p>友だちと集まったときに「みんなで遊べるゲームがほしい」と思って作り始めた、手作りのゲームサイトです。どのゲームもスマホのブラウザで開くだけ。インストールも会員登録もいりません。</p>
-<p>大事にしているのは、大人数でワイワイ盛り上がれること。その場にいる友だちとも、離れた場所の友だちとも、4けたの番号ひとつで同じゲームに入れます。ゲームはこれからも少しずつ増やしていきます。</p>
+<p>Muddy's Gamesは、友だちと集まったときに「みんなで遊べるゲームがほしい」と思って作り始めた、手作りのゲームサイトです。</p>
+<p>ここのゲームは、どれもスマホのブラウザで開くだけで遊べます。アプリのインストールも、会員登録もいりません。ルームを作って4けたの番号を伝えれば、その場にいる友だちも、離れた場所にいる友だちも、すぐに同じゲームに参加できます。</p>
+<p>いちばん大事にしているのは、大人数でワイワイ盛り上がれること。Party-Arcadeは最大8人で同時に遊べて、毎回ちがうミニゲームで順位が入れかわります。お絵描き伝言ゲームは、人数が多いほど絵がどんどん変わっていって、最後にみんなで大笑いできます。</p>
+<p>ゲームはこれからも少しずつ増やしていきます。</p>
 </div>
 
 <h2 class="sec round">開発日記</h2>
