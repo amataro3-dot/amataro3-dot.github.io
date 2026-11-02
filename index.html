@@ -6,7 +6,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
-<meta name="theme-color" content="#4E6A88">
+<meta name="theme-color" content="#2b1a10">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Muddy's Games">
@@ -32,24 +32,27 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f6f4ee;--card:#fff;--ink:#1f2633;--sub:#5d6675;--blue:#2c6fa8;--blue2:#4E6A88;--accent:#f0a020;--line:#e6e2d8}
+:root{--bg:#2b1a10;--card:#fffaf2;--neon:#ff4fa3;--neon2:#4ff0ff;--amber:#ffb84d;--light:#f6e7d3;--ink:#1f2633;--sub:#5d6675;--blue:#b8432a;--blue2:#4E6A88;--accent:#f0a020;--line:#e6e2d8}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 sans-serif}
+body{margin:0;color:var(--ink);font:16px/1.75 sans-serif;background-color:var(--bg);background-image:radial-gradient(ellipse at 50% 0,rgba(255,120,60,.18),transparent 60%),radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55)),repeating-linear-gradient(90deg,transparent 0 118px,rgba(0,0,0,.45) 118px 120px,rgba(255,220,180,.06) 120px 121px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.32' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.25  0 0 0 0 0.14  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23w)'/%3E%3C/svg%3E");background-size:auto,auto,auto,400px 400px;background-attachment:fixed,fixed,scroll,scroll}
 .wrap{max-width:600px;margin:0 auto;padding:12px 16px 24px}
 a{color:var(--blue)}
-.langs{text-align:right;font-size:13px;margin:0}
+.langs{text-align:right;font-size:13px;margin:0;color:var(--light)}
+.langs a{color:var(--amber)}
 .round{font-family:"M PLUS Rounded 1c",sans-serif}
 /* ヒーロー */
 .hero{text-align:center;padding:22px 0 8px}
-.hero h1{margin:0;font-size:40px;line-height:1.15;letter-spacing:.01em;font-weight:800}
-.hero h1 .dot{color:var(--accent)}
-.kana{display:block;font-size:13px;color:var(--sub);letter-spacing:.2em;margin-top:4px}
-.hero .lead{font-size:17px;margin:14px 0 14px;font-weight:700}
+.hero h1{margin:0;font-size:40px;line-height:1.15;letter-spacing:.01em;font-weight:800;color:#fff2f8;text-shadow:0 0 3px #fff,0 0 10px var(--neon),0 0 22px var(--neon),0 0 44px #ff2d8a;animation:flick 6s infinite}
+.hero h1 .dot{color:#fff8e6;text-shadow:0 0 3px #fff,0 0 10px var(--amber),0 0 24px var(--amber)}
+@keyframes flick{0%,92%,100%{opacity:1}93%{opacity:.55}94%{opacity:1}96%{opacity:.7}97%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.hero h1{animation:none}}
+.kana{display:block;font-size:13px;color:#e8fdff;letter-spacing:.3em;margin-top:6px;text-shadow:0 0 6px var(--neon2),0 0 14px var(--neon2)}
+.hero .lead{font-size:17px;margin:16px 0 14px;font-weight:700;color:var(--light)}
 .chips{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
-.chips li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:13px;font-weight:700}
+.chips li{background:rgba(20,10,5,.55);color:var(--light);border:1px solid rgba(255,184,77,.45);border-radius:999px;padding:3px 10px;font-size:13px;font-weight:700}
 /* ゲームのカード */
 .games{display:grid;gap:18px;margin-top:22px}
-.game{background:var(--card);border-radius:20px;overflow:hidden;box-shadow:0 2px 10px #1f263314;display:flex;flex-direction:column}
+.game{background:var(--card);border-radius:20px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.45);display:flex;flex-direction:column}
 .game .txt{flex:1;display:flex;flex-direction:column}
 .game .more{align-self:flex-start}
 .game .btns{margin-top:auto}
@@ -57,33 +60,33 @@ a{color:var(--blue)}
 .game .txt{padding:14px 16px 16px}
 .game h2{margin:0;font-size:22px;line-height:1.3}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 6px}
-.tags span{font-size:12px;font-weight:700;color:var(--blue);background:#eaf2f8;border-radius:6px;padding:1px 8px}
+.tags span{font-size:12px;font-weight:700;color:#8a4a12;background:#fbe6c8;border-radius:6px;padding:1px 8px}
 .game p{margin:0 0 12px;color:var(--sub);font-size:15px}
 .game .more{display:inline-block;font-size:14px;margin:-6px 0 12px}
 .btns{display:flex;gap:8px}
 .play,.how{flex:1;text-align:center;text-decoration:none;padding:11px 8px;border-radius:12px;font-weight:800;font-size:16px}
-.play{background:var(--blue);color:#fff}
+.play{background:linear-gradient(#d24d31,#b03a22);color:#fff;box-shadow:0 2px 0 #7a2412}
 .play:active,.how:active{transform:scale(.98)}
-.how{background:#fff;color:var(--blue);border:2px solid #cfe0ee}
+.how{background:#fff;color:var(--blue);border:2px solid #efcdb5}
 /* 見出し */
-.sec{font-size:21px;margin:40px 0 12px;text-align:center}
+.sec{font-size:22px;margin:44px 0 14px;text-align:center;color:#eaffff;text-shadow:0 0 3px #fff,0 0 10px var(--neon2),0 0 24px var(--neon2)}
 /* 遊びかた(4ステップ) */
 .steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.steps li{background:#fff;border-radius:16px;padding:14px 12px;text-align:center;font-size:14px;line-height:1.5;box-shadow:0 1px 4px #1f263310}
+.steps li{background:var(--card);border-radius:16px;padding:14px 12px;text-align:center;font-size:14px;line-height:1.5;box-shadow:0 1px 4px #1f263310}
 .steps .ic{font-size:30px;display:block;line-height:1.2}
 .steps b{display:block;color:var(--accent);font-size:13px}
-.tip{font-size:13px;color:var(--sub);margin:12px 4px 0}
+.tip{font-size:13px;color:var(--light);margin:12px 4px 0}
 /* について */
-.about{background:#fff;border-radius:16px;padding:6px 18px;box-shadow:0 1px 4px #1f263310}
+.about{background:var(--card);border-radius:16px;padding:6px 18px;box-shadow:0 1px 4px #1f263310}
 .about p{margin:12px 0;font-size:15px}
 /* 開発日記 */
 .blog{list-style:none;padding:0;margin:0;display:grid;gap:8px}
-.blog a{display:block;background:#fff;border-radius:14px;padding:12px 16px;text-decoration:none;color:var(--ink);font-weight:700;box-shadow:0 1px 4px #1f263310}
+.blog a{display:block;background:var(--card);border-radius:14px;padding:12px 16px;text-decoration:none;color:var(--ink);font-weight:700;box-shadow:0 1px 4px #1f263310}
 .blog small{display:block;color:var(--sub);font-weight:400;font-size:12px}
-.blog .all{background:transparent;box-shadow:none;text-align:center;color:var(--blue);padding:4px}
+.blog .all{background:transparent;box-shadow:none;text-align:center;color:var(--amber);padding:4px}
 @media(min-width:880px){.wrap{max-width:940px}.games{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(4,1fr)}.about,.blog,.tip{max-width:640px;margin-left:auto;margin-right:auto}}
-footer{margin-top:32px;text-align:center;font-size:14px;color:var(--sub)}
-footer a{margin:0 6px;white-space:nowrap}
+footer{margin-top:32px;text-align:center;font-size:14px;color:var(--light)}
+footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
 </style></head><body><div class="wrap">
 <p class="langs"><b>日本語</b> · <a href="/en/" hreflang="en" lang="en" onclick="try{localStorage.setItem('muddys-lang','en')}catch(e){}">English</a> · <a href="/ko/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('muddys-lang','ko')}catch(e){}">한국어</a></p>
 
