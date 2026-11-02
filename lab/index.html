@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<title>テスト中のゲーム｜Muddy's Games</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- 作りかけのゲームを置くページ。Google の検索には出さない(noindex)。sitemap.xml にも入れない。
+     トップのフッターの「テスト中のゲーム」からだけリンクする。AdSense の審査のときは、トップのそのリンクを消す -->
+<meta name="robots" content="noindex">
+<!-- アプリ風(PWA) -->
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#2b1a10">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Muddy's Games">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#2b1a10;--card:#fffaf2;--neon:#ff4fa3;--neon2:#4ff0ff;--amber:#ffb84d;--light:#f6e7d3;--ink:#1f2633;--sub:#5d6675;--blue:#b8432a}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font:16px/1.75 sans-serif;background-color:var(--bg);background-image:radial-gradient(ellipse 140% 700px at 50% 0,rgba(255,120,60,.2),transparent 70%),linear-gradient(90deg,rgba(0,0,0,.5),transparent 22%,transparent 78%,rgba(0,0,0,.5)),repeating-linear-gradient(90deg,transparent 0 118px,rgba(0,0,0,.45) 118px 120px,rgba(255,220,180,.06) 120px 121px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.32' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.25  0 0 0 0 0.14  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23w)'/%3E%3C/svg%3E");background-size:auto,auto,auto,400px 400px;background-repeat:no-repeat,repeat,repeat,repeat}
+.wrap{max-width:600px;margin:0 auto;padding:12px 16px 24px}
+a{color:var(--blue)}
+.round{font-family:"M PLUS Rounded 1c",sans-serif}
+.back{font-size:14px;margin:0}
+.back a{color:var(--amber)}
+/* 見出し */
+.hero{text-align:center;padding:18px 0 4px}
+.hero h1{margin:0;font-size:30px;line-height:1.25;font-weight:800;color:#fff2f8;text-shadow:0 0 3px #fff,0 0 10px var(--neon),0 0 22px var(--neon),0 0 44px #ff2d8a}
+.note{margin:14px 0 0;background:rgba(20,10,5,.6);border:1px dashed rgba(255,184,77,.7);border-radius:14px;padding:10px 14px;color:var(--light);font-size:14px;line-height:1.6}
+/* ゲームのカード */
+.games{display:grid;gap:18px;margin-top:20px}
+.game{position:relative;background:var(--card);border-radius:20px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.45);display:flex;flex-direction:column}
+.game .pic{display:flex;align-items:center;justify-content:center;aspect-ratio:560/220;font-size:64px;line-height:1}
+.game .txt{flex:1;display:flex;flex-direction:column;padding:14px 16px 16px}
+.game h2{margin:0;font-size:22px;line-height:1.3}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 6px}
+.tags span{font-size:12px;font-weight:700;color:#8a4a12;background:#fbe6c8;border-radius:6px;padding:1px 8px}
+.game p{margin:0 0 12px;color:var(--sub);font-size:15px}
+/* テスト中の札(木の札をひもでつるした感じ) */
+.badge{position:absolute;top:12px;right:12px;transform:rotate(4deg);background:#ffcc33;color:#3a2410;border:2px solid #3a2410;border-radius:8px;padding:2px 10px;font-size:14px;font-weight:800;box-shadow:0 3px 0 rgba(0,0,0,.35)}
+.play{display:block;margin-top:auto;text-align:center;text-decoration:none;padding:11px 8px;border-radius:12px;font-weight:800;font-size:16px;background:linear-gradient(#d24d31,#b03a22);color:#fff;box-shadow:0 2px 0 #7a2412}
+.play:active{transform:scale(.98)}
+@media(min-width:880px){.wrap{max-width:940px}.games{grid-template-columns:1fr 1fr}.note{max-width:640px;margin-left:auto;margin-right:auto}}
+footer{margin-top:32px;text-align:center;font-size:14px;color:var(--light)}
+footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
+</style></head><body><div class="wrap">
+<p class="back"><a href="/">← Muddy's Games トップ</a></p>
+
+<header class="hero">
+<h1 class="round">🛠 テスト中のゲーム</h1>
+<p class="note">ここにあるのは、まだ作っている途中のゲームです。動かなかったり、ルールが急に変わったりすることがあります。遊んでみた感想、大歓迎です!</p>
+</header>
+
+<main class="games">
+
+<section class="game">
+<span class="badge round">テスト中</span>
+<div class="pic" style="background:linear-gradient(135deg,#3b2a5c,#1d1530)" aria-hidden="true">🏃💰</div>
+<div class="txt"><h2 class="round">GRAB &amp; RUN!</h2>
+<div class="tags"><span>2〜8人</span><span>店長 vs 泥棒</span><span>練習あり</span></div>
+<p>閉店後のお店から、品物を盗んで逃げろ! 店長1人と泥棒みんなの追いかけっこ。</p>
+<a class="play" href="/grab-and-run/">▶ 遊ぶ</a></div>
+</section>
+
+<section class="game">
+<span class="badge round">テスト中</span>
+<div class="pic" style="background:linear-gradient(135deg,#1f5a3a,#0f2c1d)" aria-hidden="true">🃏👑</div>
+<div class="txt"><h2 class="round">富豪大富豪</h2>
+<div class="tags"><span>2〜8人</span><span>トランプ</span><span>コンピューターあり</span></div>
+<p>コインをかけて戦う、大富豪のオンライン対戦。足りない人数はコンピューターが入ります。</p>
+<a class="play" href="/fugo-daifugo/">▶ 遊ぶ</a></div>
+</section>
+
+<section class="game">
+<span class="badge round">テスト中</span>
+<div class="pic" style="background:linear-gradient(135deg,#0f4c5c,#5c1a4a)" aria-hidden="true">⛏️💥</div>
+<div class="txt"><h2 class="round">CORE BREAKER</h2>
+<div class="tags"><span>4対4</span><span>掘る・こわす</span><span>AIあり</span></div>
+<p>地面を掘って、こわして、置いて。相手チームのコアをこわしたら勝ち。</p>
+<a class="play" href="/core-breaker/">▶ 遊ぶ</a></div>
+</section>
+
+<section class="game">
+<span class="badge round">テスト中</span>
+<div class="pic" style="background:linear-gradient(135deg,#6a3a12,#2c1a0c)" aria-hidden="true">🚩⚔️</div>
+<div class="txt"><h2 class="round">BANNER RAID</h2>
+<div class="tags"><span>1対1</span><span>タワーディフェンス</span><span>CPU戦あり</span></div>
+<p>キャラを出撃させて、相手の城を落とそう。12体から4体を選んで戦います。</p>
+<a class="play" href="/banner-raid/">▶ 遊ぶ</a></div>
+</section>
+
+</main>
+
+<footer>
+<a href="/about.html">運営者情報</a><a href="/contact.html">お問い合わせ</a><a href="/privacy.html">プライバシーポリシー</a>
+<p>© 2026 muddys-games運営</p>
+</footer>
+</div></body></html>
