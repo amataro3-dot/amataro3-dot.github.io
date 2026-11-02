@@ -5,7 +5,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
-<meta name="theme-color" content="#4E6A88">
+<meta name="theme-color" content="#2b1a10">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Muddy's Games">
@@ -16,79 +16,132 @@
 <link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/">
 <link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8070609230129968" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&display=swap" rel="stylesheet">
 <style>
-body{margin:0 auto;max-width:560px;padding:16px;font:16px/1.7 sans-serif;background:#f7f7f2;color:#222}
-h1{text-align:center;font-size:28px;margin:16px 0 4px}
-.lead{text-align:center;color:#555;margin:0 0 20px}
-.card{background:#fff;border-radius:12px;padding:16px;margin:0 0 14px;box-shadow:0 1px 4px #0002}
-.card h2{margin:0 0 6px;font-size:20px}
-.card p{margin:0 0 12px}
-.tag{display:inline-block;font-size:13px;color:#2874a6;background:#eaf2f8;border-radius:6px;padding:1px 8px;margin:0 4px 8px 0}
+:root{--bg:#2b1a10;--card:#fffaf2;--neon:#ff4fa3;--neon2:#4ff0ff;--amber:#ffb84d;--light:#f6e7d3;--ink:#1f2633;--sub:#5d6675;--blue:#b8432a;--blue2:#4E6A88;--accent:#f0a020;--line:#e6e2d8}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font:16px/1.75 sans-serif;background-color:var(--bg);background-image:radial-gradient(ellipse at 50% 0,rgba(255,120,60,.18),transparent 60%),radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55)),repeating-linear-gradient(90deg,transparent 0 118px,rgba(0,0,0,.45) 118px 120px,rgba(255,220,180,.06) 120px 121px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.32' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.25  0 0 0 0 0.14  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23w)'/%3E%3C/svg%3E");background-size:auto,auto,auto,400px 400px;background-attachment:fixed,fixed,scroll,scroll}
+.wrap{max-width:600px;margin:0 auto;padding:12px 16px 24px}
+a{color:var(--blue)}
+.langs{text-align:right;font-size:13px;margin:0;color:var(--light)}
+.langs a{color:var(--amber)}
+.round{font-family:"M PLUS Rounded 1c",sans-serif}
+/* ヒーロー */
+.hero{text-align:center;padding:22px 0 8px}
+.hero h1{margin:0;font-size:40px;line-height:1.15;letter-spacing:.01em;font-weight:800;color:#fff2f8;text-shadow:0 0 3px #fff,0 0 10px var(--neon),0 0 22px var(--neon),0 0 44px #ff2d8a;animation:flick 6s infinite}
+.hero h1 .dot{color:#fff8e6;text-shadow:0 0 3px #fff,0 0 10px var(--amber),0 0 24px var(--amber)}
+@keyframes flick{0%,92%,100%{opacity:1}93%{opacity:.55}94%{opacity:1}96%{opacity:.7}97%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.hero h1{animation:none}}
+.kana{display:block;font-size:13px;color:#e8fdff;letter-spacing:.3em;margin-top:6px;text-shadow:0 0 6px var(--neon2),0 0 14px var(--neon2)}
+.hero .lead{font-size:17px;margin:16px 0 14px;font-weight:700;color:var(--light)}
+.chips{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{background:rgba(20,10,5,.55);color:var(--light);border:1px solid rgba(255,184,77,.45);border-radius:999px;padding:3px 10px;font-size:13px;font-weight:700}
+/* ゲームのカード */
+.games{display:grid;gap:18px;margin-top:22px}
+.game{background:var(--card);border-radius:20px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.45);display:flex;flex-direction:column}
+.game .txt{flex:1;display:flex;flex-direction:column}
+.game .more{align-self:flex-start}
+.game .btns{margin-top:auto}
+.game .pic{display:block;aspect-ratio:560/300;width:100%;height:auto}
+.game .txt{padding:14px 16px 16px}
+.game h2{margin:0;font-size:22px;line-height:1.3}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 6px}
+.tags span{font-size:12px;font-weight:700;color:#8a4a12;background:#fbe6c8;border-radius:6px;padding:1px 8px}
+.game p{margin:0 0 12px;color:var(--sub);font-size:15px}
+.game .more{display:inline-block;font-size:14px;margin:-6px 0 12px}
 .btns{display:flex;gap:8px}
-.play,.how{flex:1;display:block;text-align:center;text-decoration:none;padding:10px;border-radius:8px;font-weight:700}
-.play{background:#2874a6;color:#fff}
-.how{background:#fff;color:#2874a6;border:2px solid #2874a6}
-.sec{font-size:20px;margin:32px 0 10px;border-left:5px solid #2874a6;padding-left:8px}
-.about{background:#fff;border-radius:12px;padding:4px 16px;box-shadow:0 1px 4px #0002}
-.about p{margin:12px 0}
-ol{padding-left:1.3em;margin:8px 0}li{margin:4px 0}
-footer{margin-top:28px;text-align:center;font-size:14px;color:#666}
-footer a{color:#2874a6;margin:0 6px;white-space:nowrap}
-.soon{font-size:13px;color:#777;margin:-4px 0 10px}
-</style></head><body>
-<p class="langs" style="text-align:right;font-size:13px;margin:0 0 4px"><a href="/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('muddys-lang','ja')}catch(e){}">日本語</a> · <b>English</b> · <a href="/ko/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('muddys-lang','ko')}catch(e){}">한국어</a></p>
-<h1>Muddy's Games</h1>
-<p class="lead">Free games to enjoy together with friends.<br>No app. No sign-up.</p>
+.play,.how{flex:1;text-align:center;text-decoration:none;padding:11px 8px;border-radius:12px;font-weight:800;font-size:16px}
+.play{background:linear-gradient(#d24d31,#b03a22);color:#fff;box-shadow:0 2px 0 #7a2412}
+.play:active,.how:active{transform:scale(.98)}
+.how{background:#fff;color:var(--blue);border:2px solid #efcdb5}
+/* 見出し */
+.sec{font-size:22px;margin:44px 0 14px;text-align:center;color:#eaffff;text-shadow:0 0 3px #fff,0 0 10px var(--neon2),0 0 24px var(--neon2)}
+/* 遊びかた(4ステップ) */
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.steps li{background:var(--card);border-radius:16px;padding:14px 12px;text-align:center;font-size:14px;line-height:1.5;box-shadow:0 1px 4px #1f263310}
+.steps .ic{font-size:30px;display:block;line-height:1.2}
+.steps b{display:block;color:var(--accent);font-size:13px}
+.tip{font-size:13px;color:var(--light);margin:12px 4px 0}
+/* について */
+.about{background:var(--card);border-radius:16px;padding:6px 18px;box-shadow:0 1px 4px #1f263310}
+.about p{margin:12px 0;font-size:15px}
+/* 開発日記 */
+.blog{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.blog a{display:block;background:var(--card);border-radius:14px;padding:12px 16px;text-decoration:none;color:var(--ink);font-weight:700;box-shadow:0 1px 4px #1f263310}
+.blog small{display:block;color:var(--sub);font-weight:400;font-size:12px}
+.blog .all{background:transparent;box-shadow:none;text-align:center;color:var(--amber);padding:4px}
+@media(min-width:880px){.wrap{max-width:940px}.games{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(4,1fr)}.about,.blog,.tip{max-width:640px;margin-left:auto;margin-right:auto}}
+footer{margin-top:32px;text-align:center;font-size:14px;color:var(--light)}
+footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
+</style></head><body><div class="wrap">
+<p class="langs"><a href="/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('muddys-lang','ja')}catch(e){}">日本語</a> · <b>English</b> · <a href="/ko/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('muddys-lang','ko')}catch(e){}">한국어</a></p>
 
-<div class="card"><h2>Party-Arcade</h2>
-<span class="tag">Up to 8 players</span><span class="tag">15 mini-games</span>
-<p>A party game where you compete for points across 15 mini-games, like “Catch the Ruler!”, “Flag Up, Flag Down!” and “Red Light, Green Light!”. Some games test reflexes, some your sense of time or length, some your memory, so everyone has a different strong point and you never know who will win until the very end.</p>
-<p style="font-size:14px;margin-top:-6px"><a href="/en/howto-party-arcade.html#list">See all 15 mini-games →</a></p>
-<div class="btns"><a class="play" href="/party-arcade/?lang=en">Play</a><a class="how" href="/en/howto-party-arcade.html">How to play</a></div></div>
+<header class="hero">
+<h1 class="round">Muddy's Games<span class="dot">.</span></h1>
+<p class="lead">Open it on your phone and play together right away.</p>
+<ul class="chips"><li>🆓 Free</li><li>📱 No app</li><li>👥 Up to 8 players</li></ul>
+</header>
 
-<div class="card"><h2>Labyrinth .VS</h2>
-<span class="tag">1–8 players</span><span class="tag">vs. computer</span>
-<p>A battle on a 6×6 maze where your opponent has hidden invisible walls. Remember the walls you bump into and read how your opponent builds a maze. Play 1-on-1, 4-player doubles, or up to 8 players. There is also a computer opponent, so you can learn the rules on your own.</p>
-<div class="btns"><a class="play" href="/labyrinth/?lang=en">Play</a><a class="how" href="/en/howto-labyrinth.html">How to play</a></div></div>
+<main class="games">
 
-<div class="card"><h2>Drawing Telephone</h2>
-<span class="tag">2–8 players</span><span class="tag">drawing</span>
-<p>Pass a secret word along to the next player using only drawings. You can only see the previous drawing for 10 seconds, so the word slowly changes. The best part is the end, when everyone’s drawings are replayed and you find out where it all went wrong.</p>
-<div class="btns"><a class="play" href="/oekaki/?lang=en">Play</a><a class="how" href="/en/howto-oekaki.html">How to play</a></div></div>
+<section class="game">
+<img class="pic" src="/img/lab_en.webp" width="560" height="300" alt="Labyrinth .VS game screen. A 6×6 maze where the invisible walls you bumped into show up in red">
+<div class="txt"><h2 class="round">Labyrinth .VS</h2>
+<div class="tags"><span>1–8 players</span><span>Brain battle</span><span>vs. computer</span></div>
+<p>A maze battle with hidden invisible walls. Remember the walls you bump into and reach the goal first.</p>
 
-<div class="card"><h2>Hit &amp; Blow</h2>
-<span class="tag">1–8 players</span><span class="tag">deduction</span>
-<p>Guess your opponent’s secret number using “Hit” and “Blow” hints. Up to 8 people can join one room, and two players at a time can battle on each of the 4 floors. You can also watch other floors or practice alone.</p>
-<div class="btns"><a class="play" href="/hitblow/?lang=en">Play</a><a class="how" href="/en/howto-hitblow.html">How to play</a></div></div>
+<div class="btns"><a class="play" href="/labyrinth/?lang=en">▶ Play</a><a class="how" href="/en/howto-labyrinth.html">How to play</a></div></div>
+</section>
 
-<h2 class="sec">About Muddy's Games</h2>
-<div class="about">
-<p>Muddy's Games is a handmade game site that started with a simple wish: “I want games we can all play together when friends get together.”</p>
-<p>Every game here runs in your phone’s browser. There is no app to install and no account to create. Create a room, share the 4-digit number, and friends right next to you or far away can join the same game in seconds.</p>
-<p>What matters most is having fun as a big group. Party-Arcade lets up to 8 people play at once, and the ranking changes with every mini-game. In Drawing Telephone, the more players there are, the more the drawings drift, and everyone ends up laughing together at the end.</p>
-<p>More games will be added little by little.</p>
-</div>
+<section class="game">
+<img class="pic" src="/img/pa_en.webp" width="560" height="300" alt="Party-Arcade mini-game screens: the Cut It Evenly result, ketchup on the Muddy’s Burger, and picking spices for the South Indian curry">
+<div class="txt"><h2 class="round">Party-Arcade</h2>
+<div class="tags"><span>Up to 8 players</span><span>15 mini-games</span><span>👑 Title holders</span></div>
+<p>Cut it evenly, stack a burger, cook a curry… Compete for points in a different mini-game every round.</p>
+<a class="more" href="/en/howto-party-arcade.html#list">See all 15 mini-games →</a>
+<div class="btns"><a class="play" href="/party-arcade/?lang=en">▶ Play</a><a class="how" href="/en/howto-party-arcade.html">How to play</a></div></div>
+</section>
 
-<h2 class="sec">How to play (the same for every game)</h2>
-<div class="about">
-<ol>
-<li>Tap “Play” on the game you want and enter your name.</li>
-<li>One person creates a room, and a 4-digit number appears.</li>
-<li>Tell your friends the number, by message or out loud.</li>
-<li>Friends enter the number to join. When everyone is in, start!</li>
+<section class="game">
+<img class="pic" src="/img/ok_en.webp" width="560" height="300" alt="A Drawing Telephone example: a drawing of a cat slowly turns into a pig as it is passed from player to player">
+<div class="txt"><h2 class="round">Drawing Telephone</h2>
+<div class="tags"><span>2–8 players</span><span>Drawing</span></div>
+<p>Pass a word along using only drawings. Somehow the cat turns into a pig…? Check the answer together at the end.</p>
+
+<div class="btns"><a class="play" href="/oekaki/?lang=en">▶ Play</a><a class="how" href="/en/howto-oekaki.html">How to play</a></div></div>
+</section>
+
+<section class="game">
+<img class="pic" src="/img/hb_en.webp" width="560" height="300" alt="Hit &amp; Blow game screen: the secret number 472 found using Hit and Blow hints">
+<div class="txt"><h2 class="round">Hit &amp; Blow</h2>
+<div class="tags"><span>1–8 players</span><span>Deduction</span><span>Solo practice</span></div>
+<p>Guess your opponent’s secret number using “Hit” and “Blow” hints.</p>
+
+<div class="btns"><a class="play" href="/hitblow/?lang=en">▶ Play</a><a class="how" href="/en/howto-hitblow.html">How to play</a></div></div>
+</section>
+
+</main>
+
+<h2 class="sec round">How to play (the same for every game)</h2>
+<ol class="steps">
+<li><span class="ic">👆</span><b>STEP 1</b>Tap “Play” and enter your name</li><li><span class="ic">🚪</span><b>STEP 2</b>One person creates a room and gets a 4-digit number</li><li><span class="ic">💬</span><b>STEP 3</b>Share the number by message or out loud</li><li><span class="ic">🎉</span><b>STEP 4</b>When everyone is in, start!</li>
 </ol>
-<p>Add the site to your home screen and you can open it right away, just like an app (Android: Chrome menu → “Add to Home screen”; iPhone: Safari Share → “Add to Home Screen”).</p>
+<p class="tip">📲 Add the site to your home screen to open it like an app (Android: Chrome menu → “Add to Home screen” / iPhone: Safari Share → “Add to Home Screen”).</p>
+
+<h2 class="sec round">About Muddy's Games</h2>
+<div class="about">
+<p>A handmade game site that started with a simple wish: “I want games we can all play together when friends get together.” Every game runs in your phone’s browser, with no app to install and no account to create.</p><p>What matters most is having fun as a big group. Friends right next to you or far away can join the same game with just a 4-digit number. More games will be added little by little.</p>
 </div>
 
-<h2 class="sec">Dev diary</h2>
-<div class="about">
-<p><a href="/en/blog/oekaki.html">Why Drawing Telephone was built from scratch</a> (October 30, 2026)</p>
-<p><a href="/en/blog/party-arcade.html">How the Party-Arcade mini-games were born</a> (October 30, 2026)</p>
-<p><a href="/en/blog/start.html">How Muddy's Games began</a> (October 30, 2026)</p>
-<p><a href="/en/blog/">All dev diary posts →</a></p>
-</div>
+<h2 class="sec round">Dev diary</h2>
+<ul class="blog">
+<li><a href="/en/blog/oekaki.html">Why Drawing Telephone was built from scratch<small>October 30, 2026</small></a></li><li><a href="/en/blog/party-arcade.html">How the Party-Arcade mini-games were born<small>October 30, 2026</small></a></li><li><a href="/en/blog/start.html">How Muddy's Games began<small>October 30, 2026</small></a></li>
+<li><a class="all" href="/en/blog/">All dev diary posts →</a></li>
+</ul>
+
 <footer>
 <a href="/en/about.html">About</a><a href="/en/contact.html">Contact</a><a href="/en/privacy.html">Privacy Policy</a>
 <p>© 2026 muddys-games</p>
 </footer>
-</body></html>
+</div></body></html>

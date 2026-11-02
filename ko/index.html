@@ -5,7 +5,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
-<meta name="theme-color" content="#4E6A88">
+<meta name="theme-color" content="#2b1a10">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Muddy's Games">
@@ -16,79 +16,132 @@
 <link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/">
 <link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8070609230129968" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&family=Jua&display=swap" rel="stylesheet">
 <style>
-body{margin:0 auto;max-width:560px;padding:16px;font:16px/1.7 sans-serif;background:#f7f7f2;color:#222}
-h1{text-align:center;font-size:28px;margin:16px 0 4px}
-.lead{text-align:center;color:#555;margin:0 0 20px}
-.card{background:#fff;border-radius:12px;padding:16px;margin:0 0 14px;box-shadow:0 1px 4px #0002}
-.card h2{margin:0 0 6px;font-size:20px}
-.card p{margin:0 0 12px}
-.tag{display:inline-block;font-size:13px;color:#2874a6;background:#eaf2f8;border-radius:6px;padding:1px 8px;margin:0 4px 8px 0}
+:root{--bg:#2b1a10;--card:#fffaf2;--neon:#ff4fa3;--neon2:#4ff0ff;--amber:#ffb84d;--light:#f6e7d3;--ink:#1f2633;--sub:#5d6675;--blue:#b8432a;--blue2:#4E6A88;--accent:#f0a020;--line:#e6e2d8}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font:16px/1.75 sans-serif;background-color:var(--bg);background-image:radial-gradient(ellipse at 50% 0,rgba(255,120,60,.18),transparent 60%),radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55)),repeating-linear-gradient(90deg,transparent 0 118px,rgba(0,0,0,.45) 118px 120px,rgba(255,220,180,.06) 120px 121px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.32' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.25  0 0 0 0 0.14  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23w)'/%3E%3C/svg%3E");background-size:auto,auto,auto,400px 400px;background-attachment:fixed,fixed,scroll,scroll}
+.wrap{max-width:600px;margin:0 auto;padding:12px 16px 24px}
+a{color:var(--blue)}
+.langs{text-align:right;font-size:13px;margin:0;color:var(--light)}
+.langs a{color:var(--amber)}
+.round{font-family:"M PLUS Rounded 1c","Jua",sans-serif}
+/* ヒーロー */
+.hero{text-align:center;padding:22px 0 8px}
+.hero h1{margin:0;font-size:40px;line-height:1.15;letter-spacing:.01em;font-weight:800;color:#fff2f8;text-shadow:0 0 3px #fff,0 0 10px var(--neon),0 0 22px var(--neon),0 0 44px #ff2d8a;animation:flick 6s infinite}
+.hero h1 .dot{color:#fff8e6;text-shadow:0 0 3px #fff,0 0 10px var(--amber),0 0 24px var(--amber)}
+@keyframes flick{0%,92%,100%{opacity:1}93%{opacity:.55}94%{opacity:1}96%{opacity:.7}97%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.hero h1{animation:none}}
+.kana{display:block;font-size:13px;color:#e8fdff;letter-spacing:.3em;margin-top:6px;text-shadow:0 0 6px var(--neon2),0 0 14px var(--neon2)}
+.hero .lead{font-size:17px;margin:16px 0 14px;font-weight:700;color:var(--light)}
+.chips{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{background:rgba(20,10,5,.55);color:var(--light);border:1px solid rgba(255,184,77,.45);border-radius:999px;padding:3px 10px;font-size:13px;font-weight:700}
+/* ゲームのカード */
+.games{display:grid;gap:18px;margin-top:22px}
+.game{background:var(--card);border-radius:20px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.45);display:flex;flex-direction:column}
+.game .txt{flex:1;display:flex;flex-direction:column}
+.game .more{align-self:flex-start}
+.game .btns{margin-top:auto}
+.game .pic{display:block;aspect-ratio:560/300;width:100%;height:auto}
+.game .txt{padding:14px 16px 16px}
+.game h2{margin:0;font-size:22px;line-height:1.3}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 6px}
+.tags span{font-size:12px;font-weight:700;color:#8a4a12;background:#fbe6c8;border-radius:6px;padding:1px 8px}
+.game p{margin:0 0 12px;color:var(--sub);font-size:15px}
+.game .more{display:inline-block;font-size:14px;margin:-6px 0 12px}
 .btns{display:flex;gap:8px}
-.play,.how{flex:1;display:block;text-align:center;text-decoration:none;padding:10px;border-radius:8px;font-weight:700}
-.play{background:#2874a6;color:#fff}
-.how{background:#fff;color:#2874a6;border:2px solid #2874a6}
-.sec{font-size:20px;margin:32px 0 10px;border-left:5px solid #2874a6;padding-left:8px}
-.about{background:#fff;border-radius:12px;padding:4px 16px;box-shadow:0 1px 4px #0002}
-.about p{margin:12px 0}
-ol{padding-left:1.3em;margin:8px 0}li{margin:4px 0}
-footer{margin-top:28px;text-align:center;font-size:14px;color:#666}
-footer a{color:#2874a6;margin:0 6px;white-space:nowrap}
-.soon{font-size:13px;color:#777;margin:-4px 0 10px}
-</style></head><body>
-<p class="langs" style="text-align:right;font-size:13px;margin:0 0 4px"><a href="/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('muddys-lang','ja')}catch(e){}">日本語</a> · <a href="/en/" hreflang="en" lang="en" onclick="try{localStorage.setItem('muddys-lang','en')}catch(e){}">English</a> · <b>한국어</b></p>
-<h1>Muddy's Games</h1>
-<p class="lead">친구들과 왁자지껄 즐기는 무료 게임.<br>앱도 회원가입도 필요 없어요.</p>
+.play,.how{flex:1;text-align:center;text-decoration:none;padding:11px 8px;border-radius:12px;font-weight:800;font-size:16px}
+.play{background:linear-gradient(#d24d31,#b03a22);color:#fff;box-shadow:0 2px 0 #7a2412}
+.play:active,.how:active{transform:scale(.98)}
+.how{background:#fff;color:var(--blue);border:2px solid #efcdb5}
+/* 見出し */
+.sec{font-size:22px;margin:44px 0 14px;text-align:center;color:#eaffff;text-shadow:0 0 3px #fff,0 0 10px var(--neon2),0 0 24px var(--neon2)}
+/* 遊びかた(4ステップ) */
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.steps li{background:var(--card);border-radius:16px;padding:14px 12px;text-align:center;font-size:14px;line-height:1.5;box-shadow:0 1px 4px #1f263310}
+.steps .ic{font-size:30px;display:block;line-height:1.2}
+.steps b{display:block;color:var(--accent);font-size:13px}
+.tip{font-size:13px;color:var(--light);margin:12px 4px 0}
+/* について */
+.about{background:var(--card);border-radius:16px;padding:6px 18px;box-shadow:0 1px 4px #1f263310}
+.about p{margin:12px 0;font-size:15px}
+/* 開発日記 */
+.blog{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.blog a{display:block;background:var(--card);border-radius:14px;padding:12px 16px;text-decoration:none;color:var(--ink);font-weight:700;box-shadow:0 1px 4px #1f263310}
+.blog small{display:block;color:var(--sub);font-weight:400;font-size:12px}
+.blog .all{background:transparent;box-shadow:none;text-align:center;color:var(--amber);padding:4px}
+@media(min-width:880px){.wrap{max-width:940px}.games{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(4,1fr)}.about,.blog,.tip{max-width:640px;margin-left:auto;margin-right:auto}}
+footer{margin-top:32px;text-align:center;font-size:14px;color:var(--light)}
+footer a{margin:0 6px;white-space:nowrap;color:var(--amber)}
+</style></head><body><div class="wrap">
+<p class="langs"><a href="/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('muddys-lang','ja')}catch(e){}">日本語</a> · <a href="/en/" hreflang="en" lang="en" onclick="try{localStorage.setItem('muddys-lang','en')}catch(e){}">English</a> · <b>한국어</b></p>
 
-<div class="card"><h2>Party-Arcade</h2>
-<span class="tag">최대 8명</span><span class="tag">미니게임 15종</span>
-<p>「자를 잡아라!」「깃발 올려 내려!」「무궁화 꽃이 피었습니다!」 등 15가지 미니게임으로 포인트를 겨루는 파티 게임입니다. 반사신경, 감각, 기억력 등 게임마다 잘하는 사람이 달라서, 마지막까지 누가 이길지 몰라요.</p>
-<p style="font-size:14px;margin-top:-6px"><a href="/ko/howto-party-arcade.html#list">미니게임 15종 설명 보기 →</a></p>
-<div class="btns"><a class="play" href="/party-arcade/?lang=ko">플레이</a><a class="how" href="/ko/howto-party-arcade.html">게임 방법</a></div></div>
+<header class="hero">
+<h1 class="round">Muddy's Games<span class="dot">.</span></h1>
+<p class="lead">스마트폰으로 열고, 바로 다 같이 즐겨요.</p>
+<ul class="chips"><li>🆓 무료</li><li>📱 앱 필요 없음</li><li>👥 최대 8명</li></ul>
+</header>
 
-<div class="card"><h2>Labyrinth .VS</h2>
-<span class="tag">1~8명</span><span class="tag">컴퓨터 대전</span>
-<p>상대가 보이지 않는 벽을 숨겨 둔 6×6 미로에서 대결합니다. 부딪힌 벽을 기억하고 상대의 미로 만드는 방식을 읽어 내는 두뇌 싸움이에요. 1대1부터 4명 복식, 최대 8명까지. 컴퓨터 대전도 있어서 혼자서 규칙을 익힐 수 있어요.</p>
-<div class="btns"><a class="play" href="/labyrinth/?lang=ko">플레이</a><a class="how" href="/ko/howto-labyrinth.html">게임 방법</a></div></div>
+<main class="games">
 
-<div class="card"><h2>그림 전달 게임</h2>
-<span class="tag">2~8명</span><span class="tag">그림 그리기</span>
-<p>제시어를 그림만으로 다음 사람에게 전달하는 게임입니다. 앞사람의 그림은 10초밖에 볼 수 없어서, 제시어가 조금씩 바뀌어 가요. 마지막에 모두의 그림을 재생해서 어디서 바뀌었는지 보는 순간이 가장 신나요.</p>
-<div class="btns"><a class="play" href="/oekaki/?lang=ko">플레이</a><a class="how" href="/ko/howto-oekaki.html">게임 방법</a></div></div>
+<section class="game">
+<img class="pic" src="/img/lab_ko.webp" width="560" height="300" alt="Labyrinth .VS 게임 화면. 6×6 미로에서 부딪힌 보이지 않는 벽이 빨갛게 표시되어 있다">
+<div class="txt"><h2 class="round">Labyrinth .VS</h2>
+<div class="tags"><span>1~8명</span><span>두뇌 싸움</span><span>컴퓨터 대전</span></div>
+<p>보이지 않는 벽을 숨긴 미로에서 대결. 부딪힌 벽을 기억해서 먼저 골인하세요.</p>
 
-<div class="card"><h2>Hit &amp; Blow</h2>
-<span class="tag">1~8명</span><span class="tag">추리</span>
-<p>상대가 정한 비밀 숫자를 「히트」와 「블로」 힌트로 맞히는 숫자 맞히기 대전입니다. 한 방에 8명까지 들어가서, 4개의 플로어에서 2명씩 동시에 대결할 수 있어요. 다른 플로어 관전이나 혼자 연습도 할 수 있어요.</p>
-<div class="btns"><a class="play" href="/hitblow/?lang=ko">플레이</a><a class="how" href="/ko/howto-hitblow.html">게임 방법</a></div></div>
+<div class="btns"><a class="play" href="/labyrinth/?lang=ko">▶ 플레이</a><a class="how" href="/ko/howto-labyrinth.html">게임 방법</a></div></div>
+</section>
 
-<h2 class="sec">Muddy's Games 소개</h2>
-<div class="about">
-<p>Muddy's Games는 친구들과 모였을 때 「다 같이 할 수 있는 게임이 있으면 좋겠다」는 생각으로 만들기 시작한 수제 게임 사이트입니다.</p>
-<p>여기 있는 게임은 모두 스마트폰 브라우저로 열기만 하면 할 수 있어요. 앱 설치도 회원가입도 필요 없어요. 방을 만들고 4자리 번호를 알려 주면, 같은 자리에 있는 친구도 멀리 있는 친구도 바로 같은 게임에 참가할 수 있어요.</p>
-<p>가장 중요하게 생각하는 것은 여럿이서 왁자지껄 즐길 수 있는 것. Party-Arcade는 최대 8명이 동시에 할 수 있고, 매번 다른 미니게임으로 순위가 뒤바뀌어요. 그림 전달 게임은 인원이 많을수록 그림이 점점 바뀌어서, 마지막에 다 같이 크게 웃을 수 있어요.</p>
-<p>게임은 앞으로도 조금씩 늘려 갈 거예요.</p>
-</div>
+<section class="game">
+<img class="pic" src="/img/pa_ko.webp" width="560" height="300" alt="Party-Arcade 미니게임 화면. 똑같이 잘라라!의 결과, 머디스 버거의 케첩, 남인도 카레의 향신료 고르기">
+<div class="txt"><h2 class="round">Party-Arcade</h2>
+<div class="tags"><span>최대 8명</span><span>미니게임 15종</span><span>👑 타이틀 홀더</span></div>
+<p>원을 똑같이 자르고, 버거를 쌓고, 카레를 만들고…. 매번 다른 미니게임으로 포인트를 겨뤄요.</p>
+<a class="more" href="/ko/howto-party-arcade.html#list">미니게임 15종 보기 →</a>
+<div class="btns"><a class="play" href="/party-arcade/?lang=ko">▶ 플레이</a><a class="how" href="/ko/howto-party-arcade.html">게임 방법</a></div></div>
+</section>
 
-<h2 class="sec">노는 방법 (모든 게임 공통)</h2>
-<div class="about">
-<ol>
-<li>하고 싶은 게임의 「플레이」를 누르고 이름을 입력해요.</li>
-<li>한 명이 방을 만들면 4자리 번호가 나와요.</li>
-<li>그 번호를 메신저나 말로 친구에게 알려 줘요.</li>
-<li>친구는 번호를 입력해서 입장. 다 모이면 시작이에요.</li>
+<section class="game">
+<img class="pic" src="/img/ok_ko.webp" width="560" height="300" alt="그림 전달 게임의 예. 「고양이」 그림이 사람에서 사람으로 전해지면서 돼지로 바뀌어 간다">
+<div class="txt"><h2 class="round">그림 전달 게임</h2>
+<div class="tags"><span>2~8명</span><span>그림 그리기</span></div>
+<p>제시어를 그림만으로 릴레이. 고양이가 어느새 돼지로…? 마지막에 다 같이 정답 확인.</p>
+
+<div class="btns"><a class="play" href="/oekaki/?lang=ko">▶ 플레이</a><a class="how" href="/ko/howto-oekaki.html">게임 방법</a></div></div>
+</section>
+
+<section class="game">
+<img class="pic" src="/img/hb_ko.webp" width="560" height="300" alt="Hit &amp; Blow 게임 화면. 히트와 블로 힌트로 비밀 숫자 472를 맞힌 장면">
+<div class="txt"><h2 class="round">Hit &amp; Blow</h2>
+<div class="tags"><span>1~8명</span><span>추리</span><span>혼자 연습</span></div>
+<p>상대의 비밀 숫자를 「히트」와 「블로」 힌트로 맞히는 숫자 맞히기 대결.</p>
+
+<div class="btns"><a class="play" href="/hitblow/?lang=ko">▶ 플레이</a><a class="how" href="/ko/howto-hitblow.html">게임 방법</a></div></div>
+</section>
+
+</main>
+
+<h2 class="sec round">노는 방법 (모든 게임 공통)</h2>
+<ol class="steps">
+<li><span class="ic">👆</span><b>STEP 1</b>「플레이」를 누르고 이름을 입력</li><li><span class="ic">🚪</span><b>STEP 2</b>한 명이 방을 만들면 4자리 번호가 나와요</li><li><span class="ic">💬</span><b>STEP 3</b>번호를 메신저나 말로 친구에게 알려 줘요</li><li><span class="ic">🎉</span><b>STEP 4</b>다 모이면 시작!</li>
 </ol>
-<p>홈 화면에 추가해 두면 앱처럼 바로 열 수 있어요(Android는 Chrome 메뉴 → 「홈 화면에 추가」, iPhone은 Safari 공유 → 「홈 화면에 추가」).</p>
+<p class="tip">📲 홈 화면에 추가하면 앱처럼 바로 열 수 있어요 (Android: Chrome 메뉴 → 「홈 화면에 추가」 / iPhone: Safari 공유 → 「홈 화면에 추가」).</p>
+
+<h2 class="sec round">Muddy's Games 소개</h2>
+<div class="about">
+<p>친구들과 모였을 때 「다 같이 할 수 있는 게임이 있으면 좋겠다」는 생각으로 만들기 시작한 수제 게임 사이트입니다. 모든 게임은 스마트폰 브라우저로 열기만 하면 돼요. 앱 설치도 회원가입도 필요 없어요.</p><p>가장 중요하게 생각하는 것은 여럿이서 왁자지껄 즐길 수 있는 것. 같은 자리에 있는 친구도, 멀리 있는 친구도 4자리 번호 하나로 같은 게임에 들어올 수 있어요. 게임은 앞으로도 조금씩 늘려 갈 거예요.</p>
 </div>
 
-<h2 class="sec">개발 일기</h2>
-<div class="about">
-<p><a href="/ko/blog/oekaki.html">그림 전달 게임을 직접 만든 이유</a> (2026년 10월 30일)</p>
-<p><a href="/ko/blog/party-arcade.html">Party-Arcade의 미니게임은 이렇게 태어났다</a> (2026년 10월 30일)</p>
-<p><a href="/ko/blog/start.html">Muddy's Games를 만든 계기</a> (2026년 10월 30일)</p>
-<p><a href="/ko/blog/">개발 일기 목록 →</a></p>
-</div>
+<h2 class="sec round">개발 일기</h2>
+<ul class="blog">
+<li><a href="/ko/blog/oekaki.html">그림 전달 게임을 직접 만든 이유<small>2026년 10월 30일</small></a></li><li><a href="/ko/blog/party-arcade.html">Party-Arcade의 미니게임은 이렇게 태어났다<small>2026년 10월 30일</small></a></li><li><a href="/ko/blog/start.html">Muddy's Games를 만든 계기<small>2026년 10월 30일</small></a></li>
+<li><a class="all" href="/ko/blog/">개발 일기 목록 →</a></li>
+</ul>
+
 <footer>
 <a href="/ko/about.html">운영자 정보</a><a href="/ko/contact.html">문의하기</a><a href="/ko/privacy.html">개인정보 처리방침</a>
 <p>© 2026 muddys-games 운영</p>
 </footer>
-</body></html>
+</div></body></html>
