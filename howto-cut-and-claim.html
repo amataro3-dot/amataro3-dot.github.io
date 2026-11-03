@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<title>CUT &amp; CLAIM 遊び方｜Muddy's Games</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- アプリ風(PWA): ホーム画面に追加できるようにする。アイコンとmanifestはサイトのトップ(amataro3-dot.github.io)にある -->
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#2b1a10">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Muddy's Games">
+<meta name="description" content="CUT &amp; CLAIMの遊び方。線を引いて囲んだ場所を自分の陣地にする、8人まで同時に遊べるオンライン陣取りゲームのルールを説明します。">
+<link rel="canonical" href="https://muddys-games.com/howto-cut-and-claim.html">
+<link rel="alternate" hreflang="ja" href="https://muddys-games.com/howto-cut-and-claim.html">
+<link rel="alternate" hreflang="en" href="https://muddys-games.com/en/howto-cut-and-claim.html">
+<link rel="alternate" hreflang="ko" href="https://muddys-games.com/ko/howto-cut-and-claim.html">
+<link rel="alternate" hreflang="x-default" href="https://muddys-games.com/en/howto-cut-and-claim.html">
+<style>
+body{margin:0 auto;max-width:560px;padding:16px;font:16px/1.8 sans-serif;background:#f7f7f2;color:#222}
+h1{font-size:24px;margin:12px 0 4px}
+.lead{color:#555;margin:0 0 16px}
+h2{font-size:18px;margin:28px 0 8px;border-left:5px solid #2874a6;padding-left:8px}
+h3{font-size:16px;margin:16px 0 4px}
+.box{background:#fff;border-radius:12px;padding:4px 16px 16px;box-shadow:0 1px 4px #0002}
+a{color:#2874a6}
+ol,ul{padding-left:1.3em;margin:6px 0}li{margin:3px 0}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+td,th{border-bottom:1px solid #ddd;padding:5px 4px;text-align:left;vertical-align:top}th{background:#f0f4f8}
+.play{display:block;text-align:center;background:#2874a6;color:#fff;text-decoration:none;padding:12px;border-radius:8px;font-weight:700;margin:20px 0}
+.tip{background:#fff8e1;border-radius:8px;padding:8px 12px;margin:10px 0;font-size:15px}
+footer{margin-top:28px;text-align:center;font-size:14px;color:#666}
+footer a{margin:0 6px;white-space:nowrap}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/bar.css?v=2"></head><body>
+<p class="langs" style="text-align:right;font-size:13px;margin:0 0 4px"><b>日本語</b> · <a href="/en/howto-cut-and-claim.html" hreflang="en" lang="en" onclick="try{localStorage.setItem('muddys-lang','en')}catch(e){}">English</a> · <a href="/ko/howto-cut-and-claim.html" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('muddys-lang','ko')}catch(e){}">한국어</a></p>
+<p><a href="/">← Muddy's Games トップ</a></p>
+<h1>CUT &amp; CLAIM の遊び方</h1>
+<p class="lead">四角いフィールドの中へ線を引いて進み、囲んだ場所を自分の陣地にする陣取りゲームです。8人まで同時に、陣地を取り合います。</p>
+<a class="play" href="/cut-and-claim/?lang=ja">CUT &amp; CLAIM で遊ぶ</a>
+<div class="box">
+
+<h2>遊べる人数</h2>
+<p>オンラインは1つの部屋に8人まで。人が足りないときは、ホストがコンピューター(CPU)を足せます。CPUの強さは「よわい・ふつう・つよい」から選べます。ひとりでCPUと戦う「ひとりで練習」もあります。</p>
+
+<h2>はじめかた</h2>
+<ol>
+<li>「オンライン対戦」を押して、名前を入れて「部屋を作る」を押します。</li>
+<li>画面に出た4けたの部屋コードを、みんなに伝えます。</li>
+<li>みんなはコードを入れて「入室する」を押します。</li>
+<li>人が足りなければ、ホストが「CPUを足す」でCPUを入れます(人とCPUで2〜8人)。</li>
+<li>ホストが「はじめる」を押すと始まります。</li>
+</ol>
+
+<h2>操作</h2>
+<ul>
+<li>自分は △ です。いつも自動で進みます。ふだんは「線の上」(外の枠と、陣地のふち)を走ります。</li>
+<li>線の上で、空いている側の矢印を押すと、枠の中へ進んでいきます。進んだあとには自分の線が残ります。</li>
+<li>中では、矢印で向きを変えます(真うしろには曲がれません)。</li>
+<li><b>A ボタン</b>を押しているあいだはダッシュ(2倍の速さ)。A のまわりの輪がゲージで、線の上にいるときだけたまります。</li>
+</ul>
+
+<h2>陣地の取り方</h2>
+<ul>
+<li>中を進んで、外の枠か自分の陣地にもどってくると、囲み終わりです。</li>
+<li>囲んだうち、ダイヤン(下)がいないほうが自分の陣地になります。どちらにもいなければ、小さいほうです。</li>
+<li>人の陣地の中にも線を引けます。囲めば、人の陣地も自分のものになります。</li>
+</ul>
+
+<h2>2つの敵</h2>
+<ul>
+<li><b>ダイヤン</b>:中をくるくる回りながら飛び回る、白い細長い ◇。空いている所に引いている線にさわられると、やられます(人の陣地の中の線は平気)。</li>
+<li><b>アスタン</b>:線の上を走る、ライム色の ＊。さわるとやられます。中へ入ると、あなたの線をたどって追いかけてきます。</li>
+</ul>
+
+<h2>やられるとき</h2>
+<ul>
+<li>中を進んでいる線を、ほかの人にさわられたとき(さわった人ではなく、線を引いていた人がやられます)</li>
+<li>自分の線にぶつかったとき</li>
+<li>中で2人が正面からぶつかったとき(両方やられます)</li>
+<li>ダイヤンやアスタンにさわられたとき</li>
+<li>囲まれた所の線の上にいたとき</li>
+</ul>
+<p>やられると、引いていた線は消えますが、陣地は残ります。5秒後に復活します。</p>
+
+<h2>勝ち負け</h2>
+<p>陣地が目標をこえた人の勝ち。目標は人数で変わります。</p>
+<table>
+<tr><th>人数</th><th>目標</th></tr>
+<tr><td>2〜3人</td><td>50%</td></tr>
+<tr><td>4〜5人</td><td>35%</td></tr>
+<tr><td>6〜8人</td><td>30%</td></tr>
+</table>
+<p>だれも目標に届かないまま3分たったら、陣地がいちばん広い人の勝ちです。試合のあとは、ホストの「待ちあいへ(みんな)」で、みんなで待ちあいにもどれます。</p>
+
+<h2>勝つためのコツ</h2>
+<div class="tip">💡 小さく囲んで、すぐ線にもどるのが安全。長く中にいるほど、ねらわれやすくなります。</div>
+<div class="tip">💡 アスタンが近いときは中へ入らずに、通りすぎるのを待ちましょう。</div>
+<div class="tip">💡 帰り道でダッシュできるように、ゲージを残しておくと安心です。</div>
+<div class="tip">💡 近くに人の線があったら、さわってたおすチャンスです。</div>
+</div>
+<a class="play" href="/cut-and-claim/?lang=ja">CUT &amp; CLAIM で遊ぶ</a>
+<footer>
+<a href="/about.html">運営者情報</a><a href="/contact.html">お問い合わせ</a><a href="/privacy.html">プライバシーポリシー</a>
+<p>© 2026 muddys-games運営</p>
+</footer>
+</body></html>
