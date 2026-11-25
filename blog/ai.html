@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<title>Gemini から Claude に乗りかえた話　〜プログラミング経験ゼロから〜｜Muddy's Games</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#2b1a10">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Muddy's Games">
+<meta name="description" content="プログラミング経験ゼロから、AIでLabyrinth .VSを作った話。最初のGeminiでは直すたびに別のところが壊れ、Claudeに乗りかえて1から作り直しました。当時の画面と、今も続けている作り方のルールを紹介します。">
+<link rel="canonical" href="https://muddys-games.com/blog/ai.html">
+<style>
+body{margin:0 auto;max-width:560px;padding:16px;font:16px/1.9 sans-serif;background:#f7f7f2;color:#222}
+h1{font-size:24px;margin:12px 0 4px;line-height:1.5}
+.crumb{font-size:14px;margin:0}
+.date{color:#777;font-size:14px;margin:0 0 16px}
+h2{font-size:18px;margin:28px 0 8px;border-left:5px solid #2874a6;padding-left:8px}
+.box{background:#fff;border-radius:12px;padding:4px 16px 16px;box-shadow:0 1px 4px #0002}
+.box p{margin:12px 0}
+a{color:#2874a6}
+ul{padding-left:1.3em;margin:6px 0}li{margin:4px 0}
+.play{display:block;text-align:center;background:#2874a6;color:#fff;text-decoration:none;padding:12px;border-radius:8px;font-weight:700;margin:20px 0}
+.post{display:block;background:#fff;border-radius:12px;padding:12px 16px;margin:0 0 12px;box-shadow:0 1px 4px #0002;text-decoration:none;color:#222}
+.post b{color:#2874a6;font-size:17px}.post small{color:#777;display:block}
+footer{margin-top:28px;text-align:center;font-size:14px;color:#666}
+footer a{margin:0 6px;white-space:nowrap}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;border-radius:8px;border:1px solid #ddd;display:block}
+.shots figcaption{font-size:13px;line-height:1.5;color:#555;margin-top:4px}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/bar.css?v=2"></head><body>
+<p class="crumb"><a href="/">Muddy's Games</a> › <a href="/blog/">開発日記</a></p>
+<h1>Gemini から Claude に乗りかえた話　〜プログラミング経験ゼロから〜</h1>
+<p class="date">2026年11月25日</p>
+<div class="box">
+<p><a href="/howto-labyrinth.html">Labyrinth .VS</a>のもとは、紙とペンで遊んでいた迷路ゲームです。Excelで盤面を作って印刷すると、A4の紙1枚に4つ。アプリやブラウザで遊べるものを探しても見つからなかったので、自分で作った盤面でした。</p>
+<p>しばらく忘れていて、たまたま思い出したときに残っていたのは2枚だけ。「まぁ1回だけやるか」と遊んだら、やっぱりおもしろい。これがMuddy's Gamesの始まりです。</p>
+
+<h2>「Gemini、ゲーム作れる？」</h2>
+<p>プログラミングの経験は一切ありませんでした。文字を打って命令を出すと動く、くらいのイメージだけ。ゲームをAIで作れるとも思っていないほど、AIにはくわしくありませんでした。</p>
+<p>スマホにたまたま入っていたGeminiのアプリに聞いてみました。「Geminiゲーム作れる？」。返ってきたのは「作れますよ！どんなゲームがいいですか？」。そこでラビリンスのルールを伝えて、作ってもらいました。</p>
+
+<h2>直すと、別のところが壊れる</h2>
+<p>当時の画面です。直してもらうたびに、こんなふうに変わっていきました。</p>
+<div class="shots">
+<figure><img src="/img/blog/gemini-1.webp" width="540" height="580" loading="lazy" alt="Geminiで作った最初の画面。迷路陣(VS CPU)"><figcaption>1. スタートを選ぶ画面なのに、PとGがもう置いてある</figcaption></figure>
+<figure><img src="/img/blog/gemini-2.webp" width="540" height="785" loading="lazy" alt="盤面が消えて準備中のままの画面"><figcaption>2. 「準備中…」のまま、盤面が2つとも消える</figcaption></figure>
+<figure><img src="/img/blog/gemini-3.webp" width="540" height="890" loading="lazy" alt="壁がマスごと赤くぬられた軍人将棋風 迷路ゲームの画面"><figcaption>3. 壁がマスとマスのあいだではなく、マスごと赤くぬられる</figcaption></figure>
+<figure><img src="/img/blog/gemini-4.webp" width="540" height="570" loading="lazy" alt="盤面が小さくつぶれたLabyrinthの画面"><figcaption>4. 盤面が小さくつぶれて、1列に押しこまれる</figcaption></figure>
+<figure><img src="/img/blog/gemini-5.webp" width="540" height="735" loading="lazy" alt="英語になったCrack a Grid / Design a Gridの画面"><figcaption>5. 急に英語の画面になって、上下左右のボタンで動く形に</figcaption></figure>
+</div>
+<p>ゲームの名前も「迷路陣」→「軍人将棋風 迷路ゲーム」→「Labyrinth」と変わっていきました。1つ直すと、ほかのところが勝手に変わる。直しても直しても終わりません。</p>
+
+<h2>Claudeに同じことを聞いてみた</h2>
+<p>Claudeが優秀だと聞いて、話半分でアプリを入れました。Geminiと同じように「ラビリンスってゲーム知ってる？そのゲーム作りたいんだけど？」と聞くと、返ってきたのは選択肢つきの質問。「Labyrinthはどんなゲームにしたい？」。思わず「おぉー！Claudeさんすげぇ！！」となりました。</p>
+<p>Geminiで作ったものはほとんど使えなかったので、Claudeに1から作り直してもらいました。それでも、Geminiの時間はむだではありません。GitHubとFirebaseを教えてもらったのはGeminiでした。AIへの質問のしかたも、ここでかなり鍛えられました。</p>
+
+<h2>「書いて」と言うまで書かないで</h2>
+<p>Claudeとの最初の会話でも、ルールを伝える前に作られてしまいました。そこで「コードは『書いて』と言うまで書かないで、仕様だけ覚えて」とお願いしました。</p>
+<p>それからは、ルールを1つずつ伝えると、Claudeがそのたびに「ここまでの仕様」をまとめて確認してくれます。壁の色、サドンデス、上下2枚の盤面……。全部決まってから「書いて」と言いました。会話が長くなったら、それまでの内容をメモにまとめて、新しい会話に引き継ぎます。</p>
+<p>この「相談して決めてから書く」と「メモで引き継ぐ」の2つは、今もMuddy's Gamesの全部のゲーム作りのルールです。始まりの話は<a href="/blog/start.html">「Muddy's Gamesを作ったきっかけ」</a>にも書いています。</p>
+
+<h2>まとめ</h2>
+<p>作りたいモノがあるなら、だれでも作れると思います。まずはAIと会話するだけでも楽しいですよ。同じことを何回聞いても、怒りませんから。</p>
+</div>
+<a class="play" href="/labyrinth/?lang=ja">Labyrinth .VSで遊ぶ</a>
+<p><a href="/blog/">← 開発日記の一覧</a></p>
+<footer>
+<a href="/about.html">運営者情報</a><a href="/contact.html">お問い合わせ</a><a href="/privacy.html">プライバシーポリシー</a>
+<p>© 2026 muddys-games運営</p>
+</footer>
+</body></html>
