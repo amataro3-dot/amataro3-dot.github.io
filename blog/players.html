@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<title>大人数で遊べる工夫　〜待っている時間も、切れた人も〜｜Muddy's Games</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#2b1a10">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Muddy's Games">
+<meta name="description" content="Muddy's Gamesのゲームが最大8人で遊べる理由と、大人数で遊ぶための工夫。Labyrinth .VSの観戦・賭け・ボーナスウォール、多いほどおもしろいParty-Arcadeとお絵描き伝言ゲーム、接続が切れた人を待つ仕組みを書いています。">
+<link rel="canonical" href="https://muddys-games.com/blog/players.html">
+<style>
+body{margin:0 auto;max-width:560px;padding:16px;font:16px/1.9 sans-serif;background:#f7f7f2;color:#222}
+h1{font-size:24px;margin:12px 0 4px;line-height:1.5}
+.crumb{font-size:14px;margin:0}
+.date{color:#777;font-size:14px;margin:0 0 16px}
+h2{font-size:18px;margin:28px 0 8px;border-left:5px solid #2874a6;padding-left:8px}
+.box{background:#fff;border-radius:12px;padding:4px 16px 16px;box-shadow:0 1px 4px #0002}
+.box p{margin:12px 0}
+a{color:#2874a6}
+ul{padding-left:1.3em;margin:6px 0}li{margin:4px 0}
+.play{display:block;text-align:center;background:#2874a6;color:#fff;text-decoration:none;padding:12px;border-radius:8px;font-weight:700;margin:20px 0}
+.post{display:block;background:#fff;border-radius:12px;padding:12px 16px;margin:0 0 12px;box-shadow:0 1px 4px #0002;text-decoration:none;color:#222}
+.post b{color:#2874a6;font-size:17px}.post small{color:#777;display:block}
+footer{margin-top:28px;text-align:center;font-size:14px;color:#666}
+footer a{margin:0 6px;white-space:nowrap}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/bar.css?v=2"></head><body>
+<p class="crumb"><a href="/">Muddy's Games</a> › <a href="/blog/">開発日記</a></p>
+<h1>大人数で遊べる工夫　〜待っている時間も、切れた人も〜</h1>
+<p class="date">2026年11月25日</p>
+<div class="box">
+<p>Muddy's Gamesのゲームは、ほとんどが最大8人で遊べます。友だちが集まっても、みんなでいっしょにゲームをやるなら8人くらいが限度。そう考えて、8人を上限にしました。この記事では、大人数で遊ぶための工夫を紹介します。</p>
+
+<h2>待っている人も楽しい、Labyrinth .VSの観戦</h2>
+<p><a href="/howto-labyrinth.html">Labyrinth .VS</a>のシングルは1対1の対戦なので、人数が多いと、試合に出ない人が出てきます。そこで、待っている人も楽しめる仕組みをたくさん入れました。</p>
+<p>いちばんの見どころは観戦中の画面です。対戦する2人が迷路を作っているところを、リアルタイムで見られます。しかも、おたがいの迷路を両方。壁が1枚ずつ増えていくのを見ながら、「そこに置くんだ」「それはぶつかるでしょ」と、対戦する本人たちより先に作戦がわかってしまいます。</p>
+<p>コインバトルをオンにすると、観戦している人は、どちらが勝つかにコインを賭けられます。さらにボーナスウォールでは、対戦が始まる前に「ここにぶつかりそう」と思う壁を1枚選び、当たればコインがもらえます。地味に見えて、意外と楽しいのがこのボーナスウォール。見ているだけの時間が、予想して当てる時間に変わります。</p>
+
+<h2>Party-Arcadeとお絵描き伝言は、多いほどおもしろい</h2>
+<p><a href="/howto-party-arcade.html">Party-Arcade</a>は、全員が同時に同じミニゲームを遊ぶので、待ち時間がありません。そして人数が多いほど、結果の見せ合いが盛り上がります。たとえば<a href="/minigames/burger.html">「マディーズバーガー」</a>は、落ちてくる具材を積んでバーガーを作るゲーム。具材の順番もケチャップの出方も全員同じなのに、できあがるバーガーは人によってまったくちがいます。8人分のバーガーが並ぶと、それだけで笑いが起きます。</p>
+<p><a href="/howto-oekaki.html">お絵描き伝言ゲーム</a>は、お題を絵だけで次の人へリレーするゲームです。人数が多いほどリレーの回数が増えて、絵がどんどん変わっていきます。最後に全員の絵を順番に再生すると、どこでお題が変わったのかがわかって、大笑いになります。</p>
+
+<h2>あえて「待ってあげる」ゲームにした</h2>
+<p>ふつうのオンライン対戦ゲームは、知らない人同士で遊ぶものが多いので、接続が切れた人はすぐ負けになったり、外されたりします。</p>
+<p>Muddy's Gamesは、みんなで集まって遊ぶゲームがほとんどです。電波が悪くなったり、まちがえて画面を閉じてしまったりしても、その人はすぐそばにいます。だから、あえて接続切れですぐ外さないようにして、待つ時間を長くしてあります。</p>
+<ul>
+<li>Labyrinth .VSと<a href="/howto-hitblow.html">Hit &amp; Blow</a>は、接続が切れても60秒以内に戻れば、そのまま続けられます。</li>
+<li>Party-Arcadeは、時間で区切らず、戻ってくるのを待ちます。</li>
+<li>ページを読み直すと、自動で前のルームに戻ります。まちがえて出てしまっても、ルームの番号が入力欄に残っているので、すぐに入り直せます。</li>
+</ul>
+<p>「ちょっと待って、いま戻るから！」が言える。待ってあげられるゲームは、なかなかないのではないでしょうか。</p>
+
+<h2>まとめ</h2>
+<ul>
+<li>人数は8人まで。集まってみんなでやるなら、そのくらいが限度</li>
+<li>Labyrinth .VSは、観戦・賭け・ボーナスウォールで、待っている人も楽しめる</li>
+<li>Party-Arcadeとお絵描き伝言ゲームは、人数が多いほどおもしろい</li>
+<li>集まって遊ぶゲームだから、接続が切れた人を待ってあげる</li>
+</ul>
+<p>大人数で集まったときは、まずはParty-Arcadeかお絵描き伝言ゲームで遊んでみてください。</p>
+</div>
+<a class="play" href="/party-arcade/?lang=ja">Party-Arcadeで遊ぶ</a>
+<a class="play" href="/oekaki/?lang=ja">お絵描き伝言ゲームで遊ぶ</a>
+<p><a href="/blog/">← 開発日記の一覧</a></p>
+<footer>
+<a href="/about.html">運営者情報</a><a href="/contact.html">お問い合わせ</a><a href="/privacy.html">プライバシーポリシー</a>
+<p>© 2026 muddys-games運営</p>
+</footer>
+</body></html>
