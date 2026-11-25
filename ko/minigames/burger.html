@@ -31,6 +31,7 @@ td,th{border-bottom:1px solid #ddd;padding:5px 4px;text-align:left;vertical-alig
 .play{display:block;text-align:center;background:#2874a6;color:#fff;text-decoration:none;padding:12px;border-radius:8px;font-weight:700;margin:20px 0}
 .tip{background:#fff8e1;border-radius:8px;padding:8px 12px;margin:10px 0;font-size:15px}
 .behind{background:#f0f4f8;border-radius:8px;padding:8px 12px;margin:10px 0;font-size:15px}
+.story p{margin:10px 0}
 table.nw td:first-child{white-space:nowrap}
 .pn{display:flex;justify-content:space-between;gap:8px;margin:20px 0 0;font-size:15px}
 .list{columns:2;column-gap:16px;padding-left:1.3em;font-size:15px}
@@ -54,6 +55,7 @@ footer a{margin:0 6px;white-space:nowrap}
 <h2>점수 계산</h2><table><tr><th>내용</th><th>점수</th></tr><tr><td>끝까지 접시에 올라가 있는 재료</td><td>1개 50점</td></tr><tr><td>올린 방식(착지한 순간에 정해지고, 나중에 무너져도 남아요)</td><td>Perfect +30<br>Good +15<br>아슬아슬 +0</td></tr><tr><td>케첩</td><td>재료에 올라간 %가 그대로 점수(최대 +100)</td></tr><tr><td>완성(마지막에 위 번이 올라가 있음)</td><td>+100</td></tr><tr><td>떨어뜨린 재료(무너져서 떨어진 것도)</td><td>0점</td></tr></table><p>만점은 <b>1000점</b>이에요. 같은 점수일 때는 어긋남이 작았던 사람이 상위예요. 0점일 때는 0포인트예요.</p><h3>재료의 특징</h3><table class="nw"><tr><th>재료</th><th>특징</th></tr><tr><td>번</td><td>보통</td></tr><tr><td>양상추</td><td>조금 느림. 팔랑팔랑 좌우로 흔들림</td></tr><tr><td>패티</td><td>무겁고 조금 빠름</td></tr><tr><td>토마토</td><td>미끄러움(조금만 어긋나도 떨어짐)</td></tr><tr><td>치즈</td><td>달라붙음(어긋나도 잘 올라가고 잘 무너지지 않음)</td></tr><tr><td>양파</td><td>폭이 좁음</td></tr></table>
 <h2>잘하는 요령</h2><div class="tip">💡 손가락을 갑자기 움직이면 탑이 흔들려요. 천천히 부드럽게 움직여요.</div><div class="tip">💡 탑이 한쪽으로 쏠리면, 다음 재료는 반대쪽으로 조금 비켜서 올리면 균형이 돌아와요.</div><div class="tip">💡 토마토는 미끄러우니까 특히 가운데를 노려요. 치즈는 어긋나도 잘 올라가는 재료예요.</div><div class="tip">💡 케첩은 병의 움직임을 앞질러 따라가는 게 요령. 100점짜리니까 마지막까지 방심하지 말고!</div>
 <h2>게임의 비밀</h2><div class="behind">🛠 재료마다 무게, 크기, 미끄러운 정도가 달라요. 같은 방식으로 움직여도 재료에 따라 올라가는 방식이 바뀌는 점이 이 게임의 재미예요.</div><div class="behind">🛠 게임이 끝난 뒤에도 떨어지는 재료는 화면 아래까지 계속 떨어져요. 마지막에 떨어진 재료가 탑 위에 멈춰 보이지 않게 하기 위한 장치예요.</div>
+<h2>🍔 개발 뒷이야기</h2><div class="story"><p>다 같이 할 때 가장 분위기가 뜨거운 건 마지막 장면이에요. 위쪽 번이 떨어질 즈음이면 탑은 이미 높이 쌓여 있어요. 서둘러 받으러 가면 애써 쌓은 버거가 통째로 무너져 버려요. 위쪽 번만 놓쳐서 완성하지 못하고 끝나는 사람도 자주 있어요. 마지막까지 방심할 수 없는 게임이에요.</p><p>사실 처음 버전에는 케첩이 없었어요. 같이 하던 한 명이 「케첩 같은 게 있으면 재미있겠다」고 말해 준 것이 계기가 되어 나중에 추가했어요. 자세한 주문은 거의 하지 않았는데, AI(Claude)가 만들어 온 시제품은 꿈틀꿈틀 움직이는 병에서 케첩이 나오는, 생각한 그대로의 움직임이었어요. 처음 해 봤을 때는 다 같이 웃어 버렸어요.</p></div>
 <h2>이름에 대해</h2><p>버거, 함박스테이크, 카레, 잭 게임은 직접 운영하는 가게의 메뉴가 소재예요. <a href="/ko/blog/party-arcade.html">개발 일기에서 이야기를 읽어 보세요</a>.</p>
 <h2>혼자 연습하려면</h2><p>Party-Arcade 홈 화면의 「연습 모드」에서, 방에 들어가지 않고 이 게임만 혼자 연습할 수 있어요(기록은 저장되지 않아요). 친구와 하기 전에 규칙을 시험해 두면 안심이에요.</p>
 </div>

@@ -31,6 +31,7 @@ td,th{border-bottom:1px solid #ddd;padding:5px 4px;text-align:left;vertical-alig
 .play{display:block;text-align:center;background:#2874a6;color:#fff;text-decoration:none;padding:12px;border-radius:8px;font-weight:700;margin:20px 0}
 .tip{background:#fff8e1;border-radius:8px;padding:8px 12px;margin:10px 0;font-size:15px}
 .behind{background:#f0f4f8;border-radius:8px;padding:8px 12px;margin:10px 0;font-size:15px}
+.story p{margin:10px 0}
 table.nw td:first-child{white-space:nowrap}
 .pn{display:flex;justify-content:space-between;gap:8px;margin:20px 0 0;font-size:15px}
 .list{columns:2;column-gap:16px;padding-left:1.3em;font-size:15px}
@@ -54,6 +55,7 @@ footer a{margin:0 6px;white-space:nowrap}
 <h2>点数のしくみ</h2><table><tr><th>内容</th><th>点</th></tr><tr><td>最後までお皿に乗っている具材</td><td>1個 50点</td></tr><tr><td>乗せ方(着地した瞬間に決まり、あとで崩れても残る)</td><td>Perfect +30<br>Good +15<br>ギリギリ +0</td></tr><tr><td>ケチャップ</td><td>具材に乗った%がそのまま点(最大 +100)</td></tr><tr><td>完成(最後に上のバンズが乗っている)</td><td>+100</td></tr><tr><td>落とした具材(崩れて落ちた分も)</td><td>0点</td></tr></table><p>満点は <b>1000点</b>です。同じ点数のときは、ずれが小さかった人が上位です。0点のときは0ポイントになります。</p><h3>具材のクセ</h3><table class="nw"><tr><th>具材</th><th>クセ</th></tr><tr><td>バンズ</td><td>ふつう</td></tr><tr><td>レタス</td><td>少しゆっくり。ひらひら左右に揺れる</td></tr><tr><td>パティ</td><td>重くて少し速い</td></tr><tr><td>トマト</td><td>すべりやすい(少しのずれで落ちる)</td></tr><tr><td>チーズ</td><td>くっつく(ずれても乗りやすく、崩れにくい)</td></tr><tr><td>玉ねぎ</td><td>幅がせまい</td></tr></table>
 <h2>上手になるコツ</h2><div class="tip">💡 指を急に動かすと塔が揺れます。ゆっくり、なめらかに動かしましょう。</div><div class="tip">💡 塔が片方にずれてきたら、次の具材は反対側に少しずらして乗せると、バランスがもどります。</div><div class="tip">💡 トマトはすべりやすいので、とくに真ん中をねらいましょう。チーズはずれても乗りやすい具材です。</div><div class="tip">💡 ケチャップはボトルの動きを先回りして追いかけるのがコツ。100点分あるので、最後まで気をぬかずに!</div>
 <h2>ゲームのひみつ</h2><div class="behind">🛠 具材ごとに、重さや大きさ、すべりやすさがちがいます。同じ動かし方でも、具材によって乗り方が変わるところが、このゲームのおもしろさです。</div><div class="behind">🛠 ゲームが終わったあとも、落ちていく具材は画面の下まで落ち続けます。最後に落ちた具材が塔の上に止まって見えないようにするための工夫です。</div>
+<h2>🍔 開発のうらばなし</h2><div class="story"><p>みんなで遊んでいて、いちばん盛り上がるのは最後の場面です。上のバンズが落ちてくるころには、塔はもう高く積み上がっています。あわてて取りに行くと、せっかく積んだバーガーがまるごと倒れてしまいます。上のバンズだけを取りそこねて、完成しないまま終わる人もよくいます。最後まで気がぬけないゲームです。</p><p>じつは、最初のバージョンにはケチャップがありませんでした。遊んでいるときに、1人が「ケチャップとかあったら面白そう」と言ってくれたのがきっかけで、あとから足しました。くわしい注文はほとんどしていないのに、AI(Claude)が作ってきた試作品は、ウネウネ動くボトルから出るケチャップで、思っていたとおりの動きでした。初めて試したときは、みんなで笑ってしまいました。</p></div>
 <h2>ひとりで練習するには</h2><p>Party-Arcade のホーム画面の「練習モード」から、ルームに入らずに、このゲームだけを1人で練習できます(記録は保存されません)。友だちと遊ぶ前に、ルールをためしておくと安心です。</p>
 </div>
 <a class="play" href="/party-arcade/?lang=ja">Party-Arcade で遊ぶ</a>

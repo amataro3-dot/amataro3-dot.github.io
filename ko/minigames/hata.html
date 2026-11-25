@@ -31,6 +31,7 @@ td,th{border-bottom:1px solid #ddd;padding:5px 4px;text-align:left;vertical-alig
 .play{display:block;text-align:center;background:#2874a6;color:#fff;text-decoration:none;padding:12px;border-radius:8px;font-weight:700;margin:20px 0}
 .tip{background:#fff8e1;border-radius:8px;padding:8px 12px;margin:10px 0;font-size:15px}
 .behind{background:#f0f4f8;border-radius:8px;padding:8px 12px;margin:10px 0;font-size:15px}
+.story p{margin:10px 0}
 table.nw td:first-child{white-space:nowrap}
 .pn{display:flex;justify-content:space-between;gap:8px;margin:20px 0 0;font-size:15px}
 .list{columns:2;column-gap:16px;padding-left:1.3em;font-size:15px}
@@ -54,6 +55,7 @@ footer a{margin:0 6px;white-space:nowrap}
 <h2>점수 계산</h2><table><tr><th>내용</th><th>점수</th></tr><tr><td>정답 지시(한 부분)</td><td>1점(최고 18점)</td></tr><tr><td>4연속 정답</td><td>+2</td></tr><tr><td>8연속 정답</td><td>+3</td></tr><tr><td>12연속 정답</td><td>+3</td></tr><tr><td>18연속(퍼펙트)</td><td>+4</td></tr></table><p>틀리면 연속 수는 0으로 돌아가요. 만점은 18 + 12 = <b>30점</b>이에요. 0점일 때는 0포인트예요.</p>
 <h2>잘하는 요령</h2><div class="tip">💡 지시의 마지막 글자까지 기다렸다가 움직이는 것이 기본. 「빨강 올리…지 마!」에 걸리는 사람이 많아요.</div><div class="tip">💡 「~지 마」 지시는 그 깃발을 잠깐이라도 움직이면 아웃. 헷갈리면 움직이지 않는 게 안전해요.</div><div class="tip">💡 깃발이 이미 올라가 있을 때 「올려」가 나오면 그대로. 다시 누르면 아웃이니까 주의해요.</div><div class="tip">💡 연속 보너스가 크니까, 실수 하나보다 연속을 끊지 않는 것을 의식하면 점수가 올라가요.</div>
 <h2>게임의 비밀</h2><div class="behind">🛠 함정인 「~지 마」는 지시 중 약 30%. 게다가 「무심코 움직이고 싶어지는」 방향으로 나오도록 만들었어요.</div><div class="behind">🛠 아무것도 하지 않아도 점수를 너무 많이 얻지 않도록, 대부분의 지시는 깃발을 움직이지 않으면 정답이 되지 않게 했어요.</div><div class="behind">🛠 처음에는 20부분·35점 만점, 그다음 15부분·25점 만점이었고, 지금은 더 빨라져서 18부분·30점 만점이에요.</div>
+<h2>🚩 개발 뒷이야기</h2><div class="story"><p>깃발 게임은 해 보면 의외로 재미있는 게임이에요. 평소 생활에서 깃발을 올렸다 내렸다 할 일은 거의 없으니까요.</p><p>옛날 오락실에는 레버를 올렸다 내렸다 하며 노는 깃발 게임 기계가 있었어요. 이 미니게임은 그걸 떠올리며 만들었어요. 참고로 지시 문장은 AI에게 맡겨서 만들었어요.</p><p>사실 만든 사람도 「빨강 올리지 마」의 뜻을 가끔 헷갈려요. 이 게임에서는 「올리지 마」를 「그 깃발을 움직이면 안 된다」는 뜻으로 했는데, 정말 그게 맞는지는 자세히 알아보지 않았어요. 어쩌면 틀린 건 만든 사람 쪽일지도 몰라요.</p></div>
 <h2>혼자 연습하려면</h2><p>Party-Arcade 홈 화면의 「연습 모드」에서, 방에 들어가지 않고 이 게임만 혼자 연습할 수 있어요(기록은 저장되지 않아요). 친구와 하기 전에 규칙을 시험해 두면 안심이에요.</p>
 </div>
 <a class="play" href="/party-arcade/?lang=ko">Party-Arcade 플레이</a>
